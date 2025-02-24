@@ -16,7 +16,7 @@
 
 <a href="https://www.linkedin.com/in/eriane-dos-santos-oliveira-cfp-pqo-paap-53116292/">`Eriane Dias`</a> ・
 <a href="https://github.com/DevGustar">`Gustavo Roberto`</a> ・
-<a href="">`Gustavo Henrique`</a> ・
+<a href="https://www.linkedin.com/in/gustavo-henrique-da-silva-santos-453822326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">`Gustavo Henrique`</a> ・
 <a href="https://www.linkedin.com/in/lucas-alves-bernardo-093871252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">`Lucas Alves`</a>
 
 ## Orientadores
