@@ -1,0 +1,21 @@
+header {
+    position: relative;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 35px;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    left: 10px;
+}
