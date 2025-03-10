@@ -1,15 +1,43 @@
-const token = "ff61fa0498f30380e199c757380bc234ab427db37b44b311307daff6c39322b2"; // Substitua pelo seu token
-const url = "https://api.sympla.com.br/public/v4/events"; // Endpoint para listar eventos
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
 
-fetch(url, {
-    method: "GET",
-    headers: {
-        "s_token": token, // Cabeçalho exigido pela Sympla
-        "Content-Type": "application/json"
+        this.handleClick = this.handleClick.bind(this);
     }
-})
-    .then(response => response.json()) // Converte a resposta para JSON
-    .then(data => {
-        console.log(data); // Exibe os eventos no console
-    })
-    .catch(error => console.error("Erro ao buscar eventos:", error));
+
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
+                ? (link.style.animation = "")
+                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
+                    }s`);
+        });
+    }
+
+    handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
+        this.animateLinks();
+    }
+
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init() {
+        if (this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+);
+mobileNavbar.init();
