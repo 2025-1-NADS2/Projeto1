@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: 25px;
     left: 25px;
-    transition: opacity 0.2s ease; /* Transição suave para opacidade */
+    transition: opacity 0.2s ease;
 }
 
 .logo:hover {
