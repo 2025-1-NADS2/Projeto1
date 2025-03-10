@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #23232e;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    transition: opacity 0.2s ease;
+    /* Transição suave para opacidade */
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #23232e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #323232;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgba(35, 35, 46, 0.75);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #FF254A;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #e0243b;
+}
+
+#fazer-login {
+    position: relative;
+    top: 13px;
+    color: #23232e;
+    text-decoration: none;
+}
+
+#fazer-login a {
+    color: #ff254a;
+    text-decoration: none;
+}
+
+#error-msg {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #FF254A;
+}
