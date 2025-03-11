@@ -41,17 +41,23 @@
 <img src="https://institutocriativo.com.br/images/foto_lucy-p-500.jpeg" alt="Aluno desenvolvendo projeto" border="0">
 </p>
 
-documents/                      # Pasta principal contendo a documentação e entregas acadêmicas  
-Entrega_1/  
-├── Algoritmos_e_Estrutura_de_Dados/   # Implementação de algoritmo de ordenação em uma estrutura de dados definida.  
-├── Desenvolvimento_Web_FullStack/     # Estrutura inicial do projeto web.  
-├── Design_de_Interface_Digital/       # Prototipação da Home no Figma e definição da identidade visual.  
-├── Modelagem_de_Software/             # Documento de abertura do projeto e requisitos funcionais/não funcionais.  
-├── Programação_Orientada_ao_Objeto/   # Implementação da classe principal para integração do sistema.   
-├── Entrega 2/                   # Segunda entrega do projeto  
-├── Entrega 3/                   # Terceira entrega do projeto  
-├── Entrega 4/                   # Quarta entrega do projeto  
-├── images/                      # Pasta para armazenar imagens utilizadas no projeto  
+├──
+
+## 📂 **Estrutura do Repositório**
+
+```
+Projeto_Interdisciplinar/
+documents/                                  # Pasta principal contendo a documentação e entregas acadêmicas  
+├── Entrega_1/  
+│    ├── Algoritmos_e_Estrutura_de_Dados/   # Implementação de algoritmo de ordenação em uma estrutura de dados definida.  
+│    ├── Desenvolvimento_Web_FullStack/     # Estrutura inicial do projeto web.  
+│    ├── Design_de_Interface_Digital/       # Prototipação da Home no Figma e definição da identidade visual.  
+│    ├── Modelagem_de_Software/             # Documento de abertura do projeto e requisitos funcionais/não funcionais.  
+│    ├── Programação_Orientada_ao_Objeto/   # Implementação da classe principal para integração do sistema.   
+│    ├── Entrega 2/                         # Segunda entrega do projeto  
+│    ├── Entrega 3/                         # Terceira entrega do projeto  
+│    ├── Entrega 4/                         # Quarta entrega do projeto  
+├── images/                                 # Pasta para armazenar imagens utilizadas no projeto  
 ├── src/                         # Código-fonte principal  
 │   ├── pages/                   # Páginas do site/aplicação  
 │   ├── scripts/                 # Scripts JavaScript para funcionalidades  
@@ -59,8 +65,8 @@ Entrega_1/
 │   ├── index.html               # Página principal do projeto  
 │   ├── .gitignore               # Arquivo para ignorar arquivos no Git  
 │   ├── README.md                # Documentação principal do projeto  
-
-
+└── LICENSE                      # Licença do projeto
+```
 ## 🗓️ **Cronograma de Desenvolvimento**
 
 | **Semana** | **Atividade**                                | **Responsável Principal**  |
