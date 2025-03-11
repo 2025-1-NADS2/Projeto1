@@ -72,21 +72,22 @@ Projeto1/
 
 | **Semana** | **Atividade**                                 | **Responsável Principal**  |
 |------------|-----------------------------------------------|----------------------------|
-| 1-2        | Documento de abertura do projeto              | Toda a equipe              |
-| 3          | Desenhar um site navegável no figma           | Eriane                     |
-| 4          | Algoritmos e Estrutura de Dados               | Lucas e Gustavo H.         |
-| 5-6        | Desenvolvimento Web FullStack (HTML/CSS/JS)   | Gustavo R.                 |
-| 4          | Design de Interface Digital                   | Eriane                     |
-| 4          | Modelagem de Software                         | Lucas, Gustavo H. e Eriane |
-| 7-8        | Configuração do BackEnd                       | Gustavo R.                 |
-| 9          | Integração FrontEnd e BackEnd                 | Gustavo R.                 |
-| 10         | Testes iniciais                               | Gustavo R.                 |
-| 11         | Melhorias e ajustes                           | Gustavo R.                 |
-| 11         | Implementação de API                          | Gustavo R.                 |
-| 12-13      | Implementação de funcionalidades avançadas    | Toda a equipe              |
-| 14         | Testes finais e validação                     | Toda a equipe              |
-| 15         | Documentação e apresentação                   | Toda a equipe              |
-| 16         | Entrega final                                 | Toda a equipe              |
+|    1       | Documento de abertura do projeto              | Toda a equipe              |
+|    1       | Desenhar um site navegável no figma           | Eriane                     |
+|    2       | Algoritmos e Estrutura de Dados               | Lucas e Gustavo H.         |
+|    2       | Desenvolvimento Web FullStack (HTML/CSS/JS)   | Gustavo R.                 |
+|    1       | Design de Interface Digital                   | Eriane                     |
+|    2       | Modelagem de Software                         | Lucas, Gustavo H. e Eriane |
+|    2       | Programação Orientada a Objetos               | Lucas e Gustavo H.         |
+|    3       | Configuração do BackEnd                       | Gustavo R.                 |
+|    3       | Integração FrontEnd e BackEnd                 | Gustavo R.                 |
+|    1       | Testes iniciais                               | Gustavo R. e Eriane        |
+|    1-7     | Melhorias e ajustes                           | Gustavo R. e Eriane        |
+|    7       | Implementação de API                          | Gustavo R.                 |
+|    3-7     | Implementação de funcionalidades avançadas    | Toda a equipe              |
+|    7       | Testes finais e validação                     | Toda a equipe              |
+|    1-7     | Documentação e apresentação                   | Toda a equipe              |
+|    7       | Entrega final                                 | Toda a equipe              |
 
 ### **Tabela de Funções**
 
