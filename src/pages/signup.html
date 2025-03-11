@@ -1,34 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português (Brasil) -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="../styles/signup.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva em dispositivos móveis -->
+    <title>Cadastro</title> <!-- Título da página, aparece na aba do navegador -->
+    <link rel="stylesheet" href="../styles/signup.css"> <!-- Link para o arquivo de estilo (CSS) -->
 </head>
 
 <body>
-    <nav>
-        <a class="logo" href="../index.html"><img src="../../images/Logo.svg" alt=""></a>
+    <nav> <!-- Barra de navegação -->
+        <a class="logo" href="../index.html"><img src="../../images/Logo.svg" alt=""></a> <!-- Logo da página, que leva para a home quando clicado -->
     </nav>
-    <div class="container">
-        <h1>Cadastre-se</h1>
-        <form id="signup-form">
-            <input type="text" id="nome" placeholder="Nome" required>
+    <div class="container"> <!-- Contêiner que envolve o conteúdo do formulário -->
+        <h1>Cadastre-se</h1> <!-- Título da página de cadastro -->
+        <form id="signup-form"> <!-- Formulário de cadastro -->
+            <input type="text" id="nome" placeholder="Nome" required> <!-- Campo para o nome do usuário -->
 
-            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="email" id="email" placeholder="E-mail" required> <!-- Campo para o e-mail do usuário -->
 
-            <input type="password" id="senha" placeholder="Senha" required>
+            <input type="password" id="senha" placeholder="Senha" required> <!-- Campo para a senha do usuário -->
 
-            <input type="password" id="passwordagain" placeholder="Confirme sua senha" required>
-            </select>
-
-            <button type="submit">Cadastrar</button>
+            <input type="password" id="passwordagain" placeholder="Confirme sua senha" required> <!-- Campo para confirmar a senha -->
+            
+            <button type="submit">Cadastrar</button> <!-- Botão para enviar o formulário e realizar o cadastro -->
         </form>
-        <p id="fazer-login">Já tem uma conta? <a href="login.html">Fazer login</a></p>
+        <p id="fazer-login">Já tem uma conta? <a href="login.html">Fazer login</a></p> <!-- Link para a página de login caso o usuário já tenha uma conta -->
     </div>
-    <script src="signup.js"></script>
+    <script src="signup.js"></script> <!-- Link para o arquivo JavaScript que pode validar o formulário ou tratar dados -->
 </body>
 
 </html>
