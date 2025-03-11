@@ -42,7 +42,7 @@ class Evento
     {
         bool result = false;
 
-        // Ordena por ordem alfabetica
+        // Ordena por ordem alfabetica usando o CompareTo para tal
         if (resposta == "1" && other != null && Nome.CompareTo(other.Nome) > 0)
         {
             result = true;
