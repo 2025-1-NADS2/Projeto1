@@ -39,11 +39,8 @@ nav {
     z-index: 1000; /* Garante que a barra fique acima de outros conteúdos */
 }
 
-/* Define o fundo da área principal do site com uma imagem da Lucy interagindo */
+/* Especificações da imagem de fundo */
 main {
-    background: url("../../../images/interacao_descontraida.jpg") no-repeat center top;
-    background-size: cover;
-    background-position: center 0%;
     height: 100vh; /* Define a altura como 92% da tela */
     position: relative;
 }
