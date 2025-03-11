@@ -46,53 +46,60 @@
 ## 📂 **Estrutura do Repositório**
 
 ```
-Projeto_Interdisciplinar/
-documents/                                  # Pasta principal contendo a documentação e entregas acadêmicas  
-├── Entrega_1/  
-│    ├── Algoritmos_e_Estrutura_de_Dados/   # Implementação de algoritmo de ordenação em uma estrutura de dados definida.  
-│    ├── Desenvolvimento_Web_FullStack/     # Estrutura inicial do projeto web.  
-│    ├── Design_de_Interface_Digital/       # Prototipação da Home no Figma e definição da identidade visual.  
-│    ├── Modelagem_de_Software/             # Documento de abertura do projeto e requisitos funcionais/não funcionais.  
-│    ├── Programação_Orientada_ao_Objeto/   # Implementação da classe principal para integração do sistema.   
-│    ├── Entrega 2/                         # Segunda entrega do projeto  
-│    ├── Entrega 3/                         # Terceira entrega do projeto  
-│    ├── Entrega 4/                         # Quarta entrega do projeto  
-├── images/                                 # Pasta para armazenar imagens utilizadas no projeto  
-├── src/                         # Código-fonte principal  
-│   ├── pages/                   # Páginas do site/aplicação  
-│   ├── scripts/                 # Scripts JavaScript para funcionalidades  
-│   ├── styles/                  # Arquivos CSS para estilização  
-│   ├── index.html               # Página principal do projeto  
-│   ├── .gitignore               # Arquivo para ignorar arquivos no Git  
-│   ├── README.md                # Documentação principal do projeto  
-└── LICENSE                      # Licença do projeto
+Projeto1/
+   documents/                                                 # Pasta principal contendo a documentação e entregas acadêmicas
+   ├── Entrega 1/                                             # Primeira entrega do projeto
+   │    ├── Algoritmos e Estrutura de Dados/                  # Implementação de algoritmo de ordenação em uma estrutura de dados definida.
+   │    ├── Desenvolvimento Web FullStack/                    # Estrutura inicial do projeto web.
+   │    ├── Design de Interface Digital/                      # Prototipação da Home no Figma e definição da identidade visual.
+   │    ├── Modelagem_de_Software e Arquitetura de Sistemas/  # Documento de abertura do projeto e requisitos funcionais/não funcionais.
+   │    ├── Programação_Orientada_ao_Objeto/                  # Implementação da classe principal para integração do sistema.
+   ├── Entrega 2/                                             # Segunda entrega do projeto
+   ├── Entrega 3/                                             # Terceira entrega do projeto
+   ├── Entrega 4/                                             # Quarta entrega do projeto
+   images/                                                    # Pasta para armazenar imagens utilizadas no projeto
+   src/                                                       # Código-fonte principal
+   ├── Backend/                                               # Pasta com os códigos de backend
+   │   ├── scripts/                                           # Scripts JavaScript para funcionalidades
+   ├── Frontend/                                              # Pasta com os códigos de frontend
+   │   ├── pages/                                             # Páginas do site/aplicação
+   │   ├── styles/                                            # Arquivos CSS para estilização
+   │   ├── index.html                                         # Página principal do projeto
+   .gitignore                                                 # Arquivo para ignorar arquivos no Git
+   readme.md                                                  # Documentação principal do projeto
 ```
 ## 🗓️ **Cronograma de Desenvolvimento**
 
-| **Semana** | **Atividade**                                | **Responsável Principal**  |
-|------------|----------------------------------------------|----------------------------|
-| 1-2        | Documento de abertura do projeto             | Toda a equipe              |
-| 3          | Desenhar um site navegavel no figma          | Eriane                     |
-| 4          | Definicao de uma estrutura de dados          | Gustavo Henrique           |
-| 5-6        | Desenvolvimento do FrontEnd (HTML/CSS/JS)    | Gustavo Roberto            |
-| 7-8        | Configuração do BackEnd                      | Lucas                      |
-| 9          | Integração FrontEnd e BackEnd                | Toda a equipe              |
-| 10         | Testes iniciais                              | Toda a equipe              |
-| 11         | Melhorias e ajustes                          | Toda a equipe              |
-| 12-13      | Implementação de funcionalidades avançadas   | Toda a equipe              |
-| 14         | Testes finais e validação                    | Toda a equipe              |
-| 15         | Documentação e apresentação                  | Toda a equipe              |
-| 16         | Entrega final                                | Toda a equipe              |
+| **Semana** | **Atividade**                                 | **Responsável Principal**  |
+|------------|-----------------------------------------------|----------------------------|
+| 1-2        | Documento de abertura do projeto              | Toda a equipe              |
+| 3          | Desenhar um site navegável no figma           | Eriane                     |
+| 4          | Algoritmos e Estrutura de Dados               | Lucas e Gustavo H.         |
+| 5-6        | Desenvolvimento Web FullStack (HTML/CSS/JS)   | Gustavo R.                 |
+| 4          | Design de Interface Digital                   | Eriane                     |
+| 4          | Modelagem de Software                         | Lucas, Gustavo H. e Eriane |
+| 7-8        | Configuração do BackEnd                       | Gustavo R.                 |
+| 9          | Integração FrontEnd e BackEnd                 | Gustavo R.                 |
+| 10         | Testes iniciais                               | Gustavo R.                 |
+| 11         | Melhorias e ajustes                           | Gustavo R.                 |
+| 11         | Implementação de API                          | Gustavo R.                 |
+| 12-13      | Implementação de funcionalidades avançadas    | Toda a equipe              |
+| 14         | Testes finais e validação                     | Toda a equipe              |
+| 15         | Documentação e apresentação                   | Toda a equipe              |
+| 16         | Entrega final                                 | Toda a equipe              |
+|------------|-----------------------------------------------|----------------------------|
 
 ### **Tabela de Funções**
 
-| **Membro**     | **Função Principal**          | **Responsabilidades Secundárias**                                    |
-|----------------|------------------------------|-----------------------------------------------------------------------|
-| **GustavoH**   | Líder do FrontEnd            | Suporte no BackEnd, apresentação e documentação.                      |
-| **Ertiane**    | Designer UX/UI               | Codificação do FrontEnd, ajustes visuais e testes de usabilidade.     |
-| **Todos**      | Desenvolvedor BackEnd        | Suporte na integração com FrontEnd e testes de APIs.                  |
-| **Lucas**      | Líder Técnico                | Decisão arquitetural, configuração inicial do BackEnd e otimização.   |
-| **GustavoR**   | Desenvolvedor Full Stack     | Implementação de funcionalidades e integração de APIs.                |
+|------------------|------------------------------|-----------------------------------------------------------------------|
+|   **Membros**    |    **Função Principal**      |             **Responsabilidades Secundárias**                         |
+|------------------|------------------------------|-----------------------------------------------------------------------|
+| **Eriane**       | Designer UX/UI               | Codificação do FrontEnd, ajustes visuais e testes de usabilidade.     |
+| **Gustavo R.**   | Desenvolvedor Full Stack     | Implementação de funcionalidades e integração de API's.               |
+| **Gustavo H.**   | Estrutura de Dados           | Suporte no BackEnd, apresentação e documentação.                      |
+| **Lucas**        | Estrutura de Dados           | Decisão arquitetural, configuração inicial do BackEnd e otimização.   |
+| **Todos**        | Trabalho em Equipe           | Comunicação, responsabilidade e comprometimento.                      |
+|------------------|------------------------------|-----------------------------------------------------------------------|
 
 ## 🛠 Instalação
 
