@@ -1,18 +1,3 @@
-# OrganizadordeEvento C#
-o código organiza eventos e permite ao usuário ordená-los de forma alfabética, por ID, por preço e por data. O sistema também exibe as informações dos eventos de maneira estruturada.
-
-## Funcionalidades
-- pode escolher entre ordenar eventos de acordo com:
-  1. Ordem alfabética (por nome)
-  2. Ordem por ID
-  3. Ordem por preço (menor para maior ou maior para menor)
-  4. Ordem por preço (Maior para o Menor)
-  5. Ordem por data (evento mais próximo da data atual)
-
-## Código:
-```csharp
-using System;
-
 using System;
 
 namespace OrganizadordeEvento
