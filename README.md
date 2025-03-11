@@ -41,8 +41,6 @@
 <img src="https://institutocriativo.com.br/images/foto_lucy-p-500.jpeg" alt="Aluno desenvolvendo projeto" border="0">
 </p>
 
-├──
-
 ## 📂 **Estrutura do Repositório**
 
 ```
