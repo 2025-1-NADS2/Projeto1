@@ -109,9 +109,9 @@ Antes de começar, certifique-se de ter instalado:
    cd seu-repositorio
    ```
 3. Acesse no navegador:
-   ```
-  GoToLive
-   ```
+ ```
+GoToLive
+ ```
 
 ## 💻 Configuração para Desenvolvimento
 
