@@ -42,28 +42,12 @@
 </p>
 
 documents/                      # Pasta principal contendo a documentação e entregas acadêmicas  
-├── Entrega 1/                   # Primeira entrega do projeto  
-│   ├── Algoritmos e Estrutura de Dados/   # Implementação de algoritmo de ordenação  
-│   │   # Objetivo: Definir uma estrutura de dados que represente um evento e implementar um algoritmo de ordenação  
-│   │   # para organizar a lista de dados dessa estrutura com base em um atributo específico (ex: nome, data, preço).  
-│   │   # O algoritmo deve ser eficiente e adequado ao contexto do projeto.  
-│   ├── Desenvolvimento Web FullStack/     # Estrutura inicial do projeto web  
-│   │   # 1ª Entrega: Configuração e estruturação do projeto Full Stack.  
-│   ├── Design de Interface Digital/       # Layout e prototipação no Figma    
-│   │   # - Criação do layout e prototipação da Home no Figma.  
-│   │   # - Definição da paleta de cores.  
-│   │   # - Elaboração do Guia de Estilo do projeto.  
-│   │   # Objetivos:  
-│   │   # - Definir identidade visual e padrões de interface (UI/UX).  
-│   │   # - Criar um protótipo interativo e navegável no Figma.  
-│   │   # - Assegurar coerência visual e acessibilidade na escolha de cores.  
-│   ├── Modelagem de Software/             # Documento de abertura do projeto  
-│   │   # Instruções de Entrega:  
-│   │   # - Contextualização e objetivo da solução.  
-│   │   # - Identificação de 6 requisitos funcionais e 6 não funcionais do sistema.  
-│   ├── Programação Orientada ao Objeto/   # Implementação da classe principal do sistema  
-│   │   # Objetivo: Desenvolver a classe central do sistema, integrando as funcionalidades implementadas.  
-│   │   # A classe deve orquestrar a interação entre os módulos e garantir o fluxo adequado das operações.  
+Entrega_1/  
+├── Algoritmos_e_Estrutura_de_Dados/   # Implementação de algoritmo de ordenação em uma estrutura de dados definida.  
+├── Desenvolvimento_Web_FullStack/     # Estrutura inicial do projeto web.  
+├── Design_de_Interface_Digital/       # Prototipação da Home no Figma e definição da identidade visual.  
+├── Modelagem_de_Software/             # Documento de abertura do projeto e requisitos funcionais/não funcionais.  
+├── Programação_Orientada_ao_Objeto/   # Implementação da classe principal para integração do sistema.   
 ├── Entrega 2/                   # Segunda entrega do projeto  
 ├── Entrega 3/                   # Terceira entrega do projeto  
 ├── Entrega 4/                   # Quarta entrega do projeto  
