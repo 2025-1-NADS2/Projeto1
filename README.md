@@ -41,61 +41,87 @@
 <img src="https://institutocriativo.com.br/images/foto_lucy-p-500.jpeg" alt="Aluno desenvolvendo projeto" border="0">
 </p>
 
-## 🛠 Estrutura de pastas
+documents/                      # Pasta principal contendo a documentação e entregas acadêmicas  
+├── Entrega 1/                   # Primeira entrega do projeto  
+│   ├── Algoritmos e Estrutura de Dados/   # Implementação de algoritmo de ordenação  
+│   │   # Objetivo: Definir uma estrutura de dados que represente um evento e implementar um algoritmo de ordenação  
+│   │   # para organizar a lista de dados dessa estrutura com base em um atributo específico (ex: nome, data, preço).  
+│   │   # O algoritmo deve ser eficiente e adequado ao contexto do projeto.  
+│   ├── Desenvolvimento Web FullStack/     # Estrutura inicial do projeto web  
+│   │   # 1ª Entrega: Configuração e estruturação do projeto Full Stack.  
+│   ├── Design de Interface Digital/       # Layout e prototipação no Figma    
+│   │   # - Criação do layout e prototipação da Home no Figma.  
+│   │   # - Definição da paleta de cores.  
+│   │   # - Elaboração do Guia de Estilo do projeto.  
+│   │   # Objetivos:  
+│   │   # - Definir identidade visual e padrões de interface (UI/UX).  
+│   │   # - Criar um protótipo interativo e navegável no Figma.  
+│   │   # - Assegurar coerência visual e acessibilidade na escolha de cores.  
+│   ├── Modelagem de Software/             # Documento de abertura do projeto  
+│   │   # Instruções de Entrega:  
+│   │   # - Contextualização e objetivo da solução.  
+│   │   # - Identificação de 6 requisitos funcionais e 6 não funcionais do sistema.  
+│   ├── Programação Orientada ao Objeto/   # Implementação da classe principal do sistema  
+│   │   # Objetivo: Desenvolver a classe central do sistema, integrando as funcionalidades implementadas.  
+│   │   # A classe deve orquestrar a interação entre os módulos e garantir o fluxo adequado das operações.  
+├── Entrega 2/                   # Segunda entrega do projeto  
+├── Entrega 3/                   # Terceira entrega do projeto  
+├── Entrega 4/                   # Quarta entrega do projeto  
+├── images/                      # Pasta para armazenar imagens utilizadas no projeto  
+├── src/                         # Código-fonte principal  
+│   ├── pages/                   # Páginas do site/aplicação  
+│   ├── scripts/                 # Scripts JavaScript para funcionalidades  
+│   ├── styles/                  # Arquivos CSS para estilização  
+│   ├── index.html               # Página principal do projeto  
+│   ├── .gitignore               # Arquivo para ignorar arquivos no Git  
+│   ├── README.md                # Documentação principal do projeto  
 
-・ `Raiz`<br>
 
-|⭢ Documentos<br>
-  &emsp;|⭢ Antigos<br>
-  &emsp;&emsp;| Documentação.docx<br>
-|⭢ Executáveis<br>
-  &emsp;|⭢ Windows<br>
-  &emsp;|⭢ Android<br>
-  &emsp;|⭢ HTML<br>
-|⭢ Imagens<br>
-|⭢ Src<br>
-  &emsp;|⭢ Backend<br>
-  &emsp;|⭢ Frontend<br>
-| README.md<br>
+## 🗓️ **Cronograma de Desenvolvimento**
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+| **Semana** | **Atividade**                                | **Responsável Principal**  |
+|------------|----------------------------------------------|----------------------------|
+| 1-2        | Documento de abertura do projeto             | Toda a equipe              |
+| 3          | Desenhar um site navegavel no figma          | Eriane                     |
+| 4          | Definicao de uma estrutura de dados          | Gustavo Henrique           |
+| 5-6        | Desenvolvimento do FrontEnd (HTML/CSS/JS)    | Gustavo Roberto            |
+| 7-8        | Configuração do BackEnd                      | Lucas                      |
+| 9          | Integração FrontEnd e BackEnd                | Toda a equipe              |
+| 10         | Testes iniciais                              | Toda a equipe              |
+| 11         | Melhorias e ajustes                          | Toda a equipe              |
+| 12-13      | Implementação de funcionalidades avançadas   | Toda a equipe              |
+| 14         | Testes finais e validação                    | Toda a equipe              |
+| 15         | Documentação e apresentação                  | Toda a equipe              |
+| 16         | Entrega final                                | Toda a equipe              |
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+### **Tabela de Funções**
 
-Há também 4 pastas que seguem da seguinte forma:
-
-<b>documentos</b>: Toda a documentação estará nesta pasta.
-
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
-
-<b>imagens</b>: Imagens do sistema
-
-<b>src</b>: Pasta que contém o código fonte.
+| **Membro**     | **Função Principal**          | **Responsabilidades Secundárias**                                    |
+|----------------|------------------------------|-----------------------------------------------------------------------|
+| **GustavoH**   | Líder do FrontEnd            | Suporte no BackEnd, apresentação e documentação.                      |
+| **Ertiane**    | Designer UX/UI               | Codificação do FrontEnd, ajustes visuais e testes de usabilidade.     |
+| **Todos**      | Desenvolvedor BackEnd        | Suporte na integração com FrontEnd e testes de APIs.                  |
+| **Lucas**      | Líder Técnico                | Decisão arquitetural, configuração inicial do BackEnd e otimização.   |
+| **GustavoR**   | Desenvolvedor Full Stack     | Implementação de funcionalidades e integração de APIs.                |
 
 ## 🛠 Instalação
 
-<b>Android:</b>
+### 🔧 Pré-requisitos
+Antes de começar, certifique-se de ter instalado:
+- [Git](https://git-scm.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+### 🛠️ Passo a Passo
 
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>Windows:</b>
-
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+1. **Clone o repositório**
+   ```sh
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
+3. Acesse no navegador:
+   ```
+  GoToLive
+   ```
 
 ## 💻 Configuração para Desenvolvimento
 
