@@ -87,11 +87,9 @@ Projeto1/
 | 14         | Testes finais e validação                     | Toda a equipe              |
 | 15         | Documentação e apresentação                   | Toda a equipe              |
 | 16         | Entrega final                                 | Toda a equipe              |
-|------------|-----------------------------------------------|----------------------------|
 
 ### **Tabela de Funções**
 
-|------------------|------------------------------|-----------------------------------------------------------------------|
 |   **Membros**    |    **Função Principal**      |             **Responsabilidades Secundárias**                         |
 |------------------|------------------------------|-----------------------------------------------------------------------|
 | **Eriane**       | Designer UX/UI               | Codificação do FrontEnd, ajustes visuais e testes de usabilidade.     |
@@ -99,7 +97,6 @@ Projeto1/
 | **Gustavo H.**   | Estrutura de Dados           | Suporte no BackEnd, apresentação e documentação.                      |
 | **Lucas**        | Estrutura de Dados           | Decisão arquitetural, configuração inicial do BackEnd e otimização.   |
 | **Todos**        | Trabalho em Equipe           | Comunicação, responsabilidade e comprometimento.                      |
-|------------------|------------------------------|-----------------------------------------------------------------------|
 
 ## 🛠 Instalação
 
