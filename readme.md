@@ -38,7 +38,7 @@
 <p>Com a implementação do dashboard, espera-se melhorar a eficiência da gestão do Instituto Criativo, possibilitando um acompanhamento mais preciso das metas e um fortalecimento da colaboração entre os envolvidos, garantindo maior impacto e qualidade nos projetos educacionais.</p>
 
 <p align="center">
-<img src="https://institutocriativo.com.br/images/foto_lucy-p-500.jpeg" alt="Aluno desenvolvendo projeto" border="0">
+<img src="images/interacao_descontraida.jpg" alt="Interação entre pessoas" width="1000px">
 </p>
 
 ## 📂 **Estrutura do Repositório**
