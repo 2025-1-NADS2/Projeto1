@@ -135,3 +135,6 @@ Aqui estão as referências usadas no projeto.
 
 1. https://www.institutocriativo.com.br/images/favicon.png
 2. https://institutocriativo.com.br/
+
+## Muito obrigado! 🙂
+~ TechTeam
