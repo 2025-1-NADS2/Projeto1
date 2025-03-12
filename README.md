@@ -6,7 +6,7 @@
 
 ## Nome do Projeto
 
-<p><strong></strong>Event management system for Instituto Criativo</p>
+<p><strong></strong>Gestão de Eventos para Instituto Criativo</p>
 
 ## Nome do Grupo
 
