@@ -97,48 +97,41 @@ Projeto1/
 | **Lucas**        | Estrutura de Dados           | Decisão arquitetural, configuração inicial do BackEnd e otimização.   |
 | **Todos**        | Trabalho em Equipe           | Comunicação, responsabilidade e comprometimento.                      |
 
-## 🛠 Instalação
+## 🛠 Instalação e Execução
 
 ### 🔧 Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
-- [Git](https://git-scm.com/)
+- [GitHub Desktop](https://desktop.github.com/download/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ### 🛠️ Passo a Passo
 
 1. **Clone o repositório**
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   - Clique no botão verde "<> Code" no topo da tela inicial deste projeto.
+   - Clique em "Open with GitHub Desktop".
+   - Faça login no GitHub Desktop.
+   - Clique em "File", "Clone Repository" e, depois, em "URL".
+   - Insira a seguinte URL: https://github.com/2025-1-NADS2/Projeto1
+   - Clique em "Clone".
    ```
-3. Acesse no navegador:
- ```
-GoToLive
- ```
-
-## 💻 Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas:
-
--<a href="https://godotengine.org/download">GODOT</a>
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
-
-## 📋 Licença/License
-
+2. **Abra o VSCode**
+   ```sh
+   Pressione as teclas "Win + S" ou, se preferir, abra a barra de pesquisa windows manualmente.
+   Pesquise por "vscode" ou "Visual Studio Code" e abra-o.
+   No VSCode clique em "File", "Open Folder" e abra a pasta que você clonou no caminho que você escolheu.
+   Por exemplo: "C:\Users\nome\Downloads\Projeto1". Este é só um exemplo, você precisa encontrar onde você salvou.
+   ```
+3. **Execute**
+   ```sh
+   Clique no símbolo com quatro quadrados no canto esquerdo de seu VSCode para abrir a barra de pesquisa de extensões.
+   Procure e instale a extensão "Live Server" no VSCode.
+   Agora, clique no "index.html" que está dentro da pasta "Frontend" (em src) e, depois, clique em "Go Live".
+   ```
 
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+1. https://www.institutocriativo.com.br/images/favicon.png
+2. https://institutocriativo.com.br/
