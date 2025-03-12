@@ -22,9 +22,9 @@
 ## Orientadores
 
 <a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">`Dr. Eduardo Savino`</a> ・
-<a href="https://www.linkedin.com/in/francisco-escobar/">`Francisco Escobar`</a> ・
+<a href="https://www.linkedin.com/in/francisco-escobar/">`Me. Francisco Escobar`</a> ・
 <a href="https://www.linkedin.com/in/aimarlopes/">`Aimar Lopes`</a> ・
-<a href="https://www.linkedin.com/in/jbuesso/">`Jose Buesso`</a>  ・
+<a href="https://www.linkedin.com/in/jbuesso/">`Dr. Jose Buesso`</a>  ・
 <a href="https://www.linkedin.com/in/victorbarq/?originalSubdomain=br">`Dr. Victor Rosetti`</a>
 
 ## Descrição
