@@ -21,11 +21,11 @@
 
 ## Orientadores
 
-<a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">`Dr. Eduardo Savino`</a> ・
-<a href="https://www.linkedin.com/in/francisco-escobar/">`Me. Francisco Escobar`</a> ・
-<a href="https://www.linkedin.com/in/aimarlopes/">`Me. Aimar Lopes`</a> ・
-<a href="https://www.linkedin.com/in/jbuesso/">`Dr. Jose Buesso`</a>  ・
-<a href="https://www.linkedin.com/in/victorbarq/?originalSubdomain=br">`Dr. Victor Rosetti`</a>
+<a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">`Dr. Eduardo Savino Gomes`</a> ・
+<a href="https://www.linkedin.com/in/francisco-escobar/">`Me. Francisco de Souza Escobar`</a> ・
+<a href="https://www.linkedin.com/in/aimarlopes/">`Me. Aimar Martins Lopes`</a> ・
+<a href="https://www.linkedin.com/in/jbuesso/">`Dr. Jose Carlos Buesso Junior`</a>  ・
+<a href="https://www.linkedin.com/in/victorbarq/?originalSubdomain=br">`Dr. Victor Rosetti de Quiroz`</a>
 
 ## Descrição
 
