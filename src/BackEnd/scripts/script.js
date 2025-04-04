@@ -86,6 +86,8 @@ function changeBackground() {
         document.body.style.backgroundImage = `url(${imageUrl})`;
         document.body.style.backgroundSize = 'cover'; // Faz a imagem cobrir toda a tela
         document.body.style.backgroundPosition = 'center'; // Centraliza a imagem
+        let loader = window.document.getElementById("loader");
+        loader.style.display = "none";
     });
 }
 
