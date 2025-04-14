@@ -1,140 +1,164 @@
-# FECAP - Fundação Escola de Comércio Álvares Penteado
+
+# 🎓 FECAP - Fundação Escola de Comércio Álvares Penteado
 
 <p align="center">
-<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação Escola de Comércio Álvares Penteado" border="0"></a>
+  <a href="https://www.fecap.br/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP" />
+  </a>
 </p>
 
-## Nome do Projeto
+## 🧠 Projeto
 
-<p><strong></strong>Gestão de Eventos para Instituto Criativo</p>
+### **Gestão de Eventos para o Instituto Criativo**
 
-## Nome do Grupo
+## 👨‍💻 Equipe `TechTeam`
 
-<P>TechTeam</P>
+| Nome                 | Perfil                                                              |
+|----------------------|---------------------------------------------------------------------|
+| Eriane Dias          | [LinkedIn](https://www.linkedin.com/in/eriane-dos-santos-oliveira-cfp-pqo-paap-53116292/) |
+| Gustavo Roberto      | [GitHub](https://github.com/DevGustar)                              |
+| Gustavo Henrique     | [LinkedIn](https://www.linkedin.com/in/gustavo-henrique-da-silva-santos-453822326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Lucas Alves          | [LinkedIn](https://www.linkedin.com/in/lucas-alves-bernardo-093871252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)|
 
-## Integrantes
+## 👨‍🏫 Orientadores
 
-<a href="https://www.linkedin.com/in/eriane-dos-santos-oliveira-cfp-pqo-paap-53116292/">`Eriane Dias`</a> ・
-<a href="https://github.com/DevGustar">`Gustavo Roberto`</a> ・
-<a href="https://www.linkedin.com/in/gustavo-henrique-da-silva-santos-453822326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">`Gustavo Henrique`</a> ・
-<a href="https://www.linkedin.com/in/lucas-alves-bernardo-093871252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">`Lucas Alves`</a>
+- [`Dr. Eduardo Savino Gomes`](https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/)
+- [`Me. Francisco de Souza Escobar`](https://www.linkedin.com/in/francisco-escobar/)
+- [`Me. Aimar Martins Lopes`](https://www.linkedin.com/in/aimarlopes/)
+- [`Dr. Jose Carlos Buesso Junior`](https://www.linkedin.com/in/jbuesso/)
+- [`Dr. Victor Rosetti de Quiroz`](https://www.linkedin.com/in/victorbarq/?originalSubdomain=br)
 
-## Orientadores
+## 📝 Descrição do Projeto
 
-<a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">`Dr. Eduardo Savino Gomes`</a> ・
-<a href="https://www.linkedin.com/in/francisco-escobar/">`Me. Francisco de Souza Escobar`</a> ・
-<a href="https://www.linkedin.com/in/aimarlopes/">`Me. Aimar Martins Lopes`</a> ・
-<a href="https://www.linkedin.com/in/jbuesso/">`Dr. Jose Carlos Buesso Junior`</a>  ・
-<a href="https://www.linkedin.com/in/victorbarq/?originalSubdomain=br">`Dr. Victor Rosetti de Quiroz`</a>
+O **Instituto Criativo** enfrenta dificuldades na gestão de seus projetos educacionais devido à descentralização de informações, dificultando o monitoramento do progresso e a tomada de decisões.
 
-## Descrição
+Para resolver esse problema, desenvolvemos uma aplicação completa com dashboard interativo e funcionalidades como:
 
-<p>O Instituto Criativo enfrenta desafios na gestão de seus projetos educacionais devido à descentralização das informações, dificultando o acompanhamento do progresso e a tomada de decisões. Para solucionar esse problema, propõe-se o desenvolvimento de um dashboard de gestão que centralize e organize todas as atividades da instituição.</p>
+- Gestão e visualização de eventos com compra de ingressos
+- Registro de doações
+- Acompanhamento de projetos educacionais
+- Relatórios e indicadores de desempenho (KPIs)
+- Interface intuitiva e responsiva
+- Integração com redes sociais (futuramente)
 
-<p>Essa ferramenta visa otimizar a administração dos projetos, oferecendo relatórios automáticos, acompanhamento em tempo real e maior transparência na comunicação entre gestores, educadores e parceiros. O painel contará com funcionalidades como visualização de cronogramas, rastreamento de progresso, notificações e geração de relatórios personalizáveis.</p>
-
-<p>O sistema será desenvolvido com tecnologias modernas, incluindo .NET para o back-end, React para a interface de usuário e MySQL para o armazenamento de dados. Além disso, poderá integrar-se a redes sociais para facilitar a divulgação das iniciativas.</p>
-
-<p>Com a implementação do dashboard, espera-se melhorar a eficiência da gestão do Instituto Criativo, possibilitando um acompanhamento mais preciso das metas e um fortalecimento da colaboração entre os envolvidos, garantindo maior impacto e qualidade nos projetos educacionais.</p>
+> 🧰 Tecnologias utilizadas:
+> - Backend: `.NET (C#)`
+> - Frontend: `React`
+> - Banco de Dados: `MySQL`
 
 <p align="center">
-<img src="images/interacao_descontraida.jpg" alt="Interação entre pessoas" width="1000px">
+  <img src="images/interacao_descontraida.jpg" alt="Interação entre pessoas" width="1000px">
 </p>
 
-## 📂 **Estrutura do Repositório**
+## 📁 Estrutura do Projeto
 
 ```
-Projeto1/
-   documents/                                                 # Pasta principal contendo a documentação e entregas acadêmicas
-   ├── Entrega 1/                                             # Primeira entrega do projeto
-   │    ├── Algoritmos e Estrutura de Dados/                  # Implementação de algoritmo de ordenação em uma estrutura de dados definida.
-   │    ├── Desenvolvimento Web FullStack/                    # Estrutura inicial do projeto web.
-   │    ├── Design de Interface Digital/                      # Prototipação da Home no Figma e definição da identidade visual.
-   │    ├── Modelagem_de_Software e Arquitetura de Sistemas/  # Documento de abertura do projeto e requisitos funcionais/não funcionais.
-   │    ├── Programação_Orientada_ao_Objeto/                  # Implementação da classe principal para integração do sistema.
-   ├── Entrega 2/                                             # Segunda entrega do projeto
-   ├── Entrega 3/                                             # Terceira entrega do projeto
-   ├── Entrega 4/                                             # Quarta entrega do projeto
-   images/                                                    # Pasta para armazenar imagens utilizadas no projeto
-   src/                                                       # Código-fonte principal
-   ├── Backend/                                               # Pasta com os códigos de backend
-   │   ├── scripts/                                           # Scripts JavaScript para funcionalidades
-   ├── Frontend/                                              # Pasta com os códigos de frontend
-   │   ├── pages/                                             # Páginas do site/aplicação
-   │   ├── styles/                                            # Arquivos CSS para estilização
-   │   ├── index.html                                         # Página principal do projeto
-   .gitignore                                                 # Arquivo para ignorar arquivos no Git
-   readme.md                                                  # Documentação principal do projeto
+instituto-criativo/
+├── backend/
+│   ├── Controllers/
+│   ├── DTOs/
+│   ├── Models/
+│   ├── Services/
+│   ├── Repositories/
+│   │   └── Implementations/
+│   ├── Data/
+│   ├── Helpers/
+│   ├── Middleware/
+│   ├── Migrations/
+│   ├── appsettings.json
+│   ├── Program.cs
+│   ├── Startup.cs
+│   └── InstitutoCriativoAPI.csproj
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── assets/images/
+│   │   ├── components/{events, donations, dashboard, common, auth}
+│   │   ├── pages/{Home, Events, Dashboard, Login, Register, Donations, NotFound}.jsx
+│   │   ├── services/api.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── .env
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── package.json
+│
+├── database/
+│   ├── InstitutoCriativo_ER_Diagram.png
+│   └── InstitutoCriativo_DB_Script.sql
+│
+├── docs/
+│   └── Desenvolvimento do Sistema Web para o Instituto Criativo.pdf
+│
+├── .gitignore
+└── README.md
 ```
-## 🗓️ **Cronograma de Desenvolvimento**
 
-| **Semana** | **Atividade**                                 | **Responsável Principal**  |
-|------------|-----------------------------------------------|----------------------------|
-|    1       | Documento de abertura do projeto              | Toda a equipe              |
-|    1       | Desenhar um site navegável no figma           | Eriane                     |
-|    2       | Algoritmos e Estrutura de Dados               | Lucas e Gustavo H.         |
-|    2       | Desenvolvimento Web FullStack (HTML/CSS/JS)   | Gustavo R.                 |
-|    1       | Design de Interface Digital                   | Eriane                     |
-|    2       | Modelagem de Software                         | Lucas, Gustavo H. e Eriane |
-|    2       | Programação Orientada a Objetos               | Lucas e Gustavo H.         |
-|    3       | Configuração do BackEnd                       | Gustavo R.                 |
-|    3       | Integração FrontEnd e BackEnd                 | Gustavo R.                 |
-|    1       | Testes iniciais                               | Gustavo R. e Eriane        |
-|    1-7     | Melhorias e ajustes                           | Gustavo R. e Eriane        |
-|    7       | Implementação de API                          | Gustavo R.                 |
-|    3-7     | Implementação de funcionalidades avançadas    | Toda a equipe              |
-|    7       | Testes finais e validação                     | Toda a equipe              |
-|    1-7     | Documentação e apresentação                   | Toda a equipe              |
-|    7       | Entrega final                                 | Toda a equipe              |
+## 🗓️ Cronograma de Desenvolvimento
 
-### **Tabela de Funções**
+| Semana | Atividade                                   | Responsável               |
+|--------|---------------------------------------------|---------------------------|
+| 1      | Documento de abertura do projeto            | Todos                     |
+| 1      | Wireframe navegável (Figma)                 | Eriane                    |
+| 2      | Estrutura de Dados / POO                    | Lucas, Gustavo H.         |
+| 2      | Desenvolvimento Web FullStack               | Gustavo R.                |
+| 3      | Setup do backend + integração com frontend  | Gustavo R.                |
+| 3–7    | Funcionalidades avançadas                   | Toda a equipe             |
+| 1–7    | Melhorias, testes e documentação            | Toda a equipe             |
+| 7      | Apresentação e entrega final                | Toda a equipe             |
 
-|   **Membros**    |    **Função Principal**      |             **Responsabilidades Secundárias**                         |
-|------------------|------------------------------|-----------------------------------------------------------------------|
-| **Eriane**       | Designer UX/UI               | Codificação do FrontEnd, ajustes visuais e testes de usabilidade.     |
-| **Gustavo R.**   | Desenvolvedor Full Stack     | Implementação de funcionalidades e integração de API's.               |
-| **Gustavo H.**   | Estrutura de Dados           | Suporte no BackEnd, apresentação e documentação.                      |
-| **Lucas**        | Estrutura de Dados           | Decisão arquitetural, configuração inicial do BackEnd e otimização.   |
-| **Todos**        | Trabalho em Equipe           | Comunicação, responsabilidade e comprometimento.                      |
+## 👥 Tabela de Funções
 
-## 🛠 Instalação e Execução
+| Membro           | Função Principal      | Atividades Secundárias                                      |
+|------------------|-----------------------|-------------------------------------------------------------|
+| Eriane           | Designer UX/UI        | Codificação, responsividade e testes de usabilidade         |
+| Gustavo R.       | Dev Full Stack        | API, funcionalidades e integração frontend/backend          |
+| Gustavo H.       | Estrutura de Dados    | Apoio backend, testes, documentação                         |
+| Lucas            | Estrutura de Dados    | Arquitetura, otimizações e infraestrutura                   |
+| Todos            | Colaboração Geral     | Comunicação, testes, revisão e ajustes finais               |
+
+## ⚙️ Como Executar o Projeto
 
 ### 🔧 Pré-requisitos
-Antes de começar, certifique-se de ter instalado:
-- [GitHub Desktop](https://desktop.github.com/download/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [GitHub Desktop](https://desktop.github.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download)
+- [Node.js + npm](https://nodejs.org/)
+- MySQL Server + MySQL Workbench
 
-### 🛠️ Passo a Passo
+### 🚀 Passos
 
-1. **Clone o repositório**
-   ```sh
-   - Clique no botão verde "<> Code" no topo da tela inicial deste projeto.
-   - Clique em "Open with GitHub Desktop".
-   - Faça login no GitHub Desktop.
-   - Clique em "File", "Clone Repository" e, depois, em "URL".
-   - Insira a seguinte URL: https://github.com/2025-1-NADS2/Projeto1
-   - Clique em "Clone".
-   ```
-2. **Abra o VSCode**
-   ```sh
-   Pressione as teclas "Win + S" ou, se preferir, abra a barra de pesquisa windows manualmente.
-   Pesquise por "vscode" ou "Visual Studio Code" e abra-o.
-   No VSCode clique em "File", "Open Folder" e abra a pasta que você clonou no caminho que você escolheu.
-   Por exemplo: "C:\Users\nome\Downloads\Projeto1". Este é só um exemplo, você precisa encontrar onde você salvou.
-   ```
-3. **Execute**
-   ```sh
-   Clique no símbolo com quatro quadrados no canto esquerdo de seu VSCode para abrir a barra de pesquisa de extensões.
-   Procure e instale a extensão "Live Server" no VSCode.
-   Agora, clique no "index.html" que está dentro da pasta "Frontend" (em src) e, depois, clique em "Go Live".
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/2025-1-NADS2/Projeto1
    ```
 
-## 🎓 Referências
+2. **Backend (.NET)**
+   ```bash
+   cd instituto-criativo/backend
+   dotnet restore
+   dotnet ef database update  # aplica as migrations
+   dotnet run
+   ```
 
-Aqui estão as referências usadas no projeto.
+3. **Frontend (React)**
+   ```bash
+   cd instituto-criativo/frontend
+   npm install
+   npm run dev
+   ```
 
-1. https://www.institutocriativo.com.br/images/favicon.png
-2. https://institutocriativo.com.br/
+## 📚 Referências
 
-## Muito obrigado! 🙂
-~ TechTeam
+- [Site do Instituto Criativo](https://institutocriativo.com.br/)
+- [Favicon Instituto Criativo](https://www.institutocriativo.com.br/images/favicon.png)
+
+## 🙏 Agradecimento
+
+Muito obrigado por acompanhar nosso projeto!  
+Esperamos que esta iniciativa contribua para transformar positivamente a gestão educacional da ONG 💡
+
+Feito com ❤ por **TechTeam**
