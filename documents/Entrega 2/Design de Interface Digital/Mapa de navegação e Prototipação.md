@@ -10,7 +10,7 @@
 
 # Descrição:
 <p>Os alunos devem desenvolver um protótipo interativo no Figma, representando visualmente o layout, o design e a interatividade do site ou sistema. O protótipo permitirá validar o fluxo de navegação e a experiência do usuário com os componentes da interface.</p>
-<p>https://www.figma.com/design/dTBDdWR0jFbYtxaAKb4A2A/Untitled?t=SdC9hH2w9nu0GPzM-0</p>
+<p>https://www.figma.com/proto/dTBDdWR0jFbYtxaAKb4A2A/Untitled?node-id=1-2&t=4ox5qu1EEOSDUAnx-1</p>
 
 ## Objetivos:
    <li>Criar Prototótipos Navegáveis: Representar as páginas principais do projeto de forma interativa.</li>
