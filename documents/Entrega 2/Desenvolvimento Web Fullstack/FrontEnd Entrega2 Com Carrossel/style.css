@@ -1,0 +1,300 @@
+html,
+body {
+    background-color: rgb(35, 35, 46);
+}
+
+/* Remove as margens e espaçamentos padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza os links para ficarem brancos e sem sublinhado */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    /* Adiciona um efeito suave ao passar o mouse */
+}
+
+/* Reduz a opacidade do link quando o mouse passa por cima */
+a:hover {
+    opacity: 0.3;
+}
+
+/* Posiciona o logo no canto esquerdo da tela e o mantém fixo */
+.logo-inicial {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 25px;
+}
+
+/* Estiliza a barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    /* Cor de fundo escura */
+    min-height: 50px;
+    /* Define uma altura mínima */
+    position: fixed;
+    /* Deixa a barra fixa no topo */
+    top: 0;
+    /* Posiciona a barra no topo da tela */
+    left: 0;
+    /* Garante que a barra ocupe toda a largura */
+    width: 100%;
+    /* Garante que ocupe toda a largura da tela */
+    z-index: 1000;
+    /* Garante que a barra fique acima de outros conteúdos */
+}
+
+/* Especificações da imagem de fundo */
+main {
+    height: 100vh; /* Faz o main ocupar a altura total da tela */
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+}
+
+
+/* Remove os marcadores da lista do menu e deixa os itens alinhados */
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+/* Ajusta os itens do menu */
+.nav-list li {
+    text-align: center;
+    margin-left: 32px;
+    /* Adiciona um espaçamento entre os itens */
+}
+
+/* Configura o menu mobile (botão de três linhas), mas ele começa invisível */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    right: 5vw;
+    cursor: pointer;
+}
+
+/* Reduz a opacidade do menu mobile ao passar o mouse */
+.mobile-menu:hover {
+    opacity: 0.3;
+}
+
+/* Cria as três barrinhas do menu mobile */
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/* Ajustes para telas menores (até 1100px de largura) */
+@media (max-width: 1100px) {
+
+    /* Impede a rolagem horizontal para evitar cortes */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Transforma o menu em um painel lateral oculto */
+    .nav-list {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        min-width: 15vw;
+        height: 250px;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        /* Esconde o menu fora da tela */
+    }
+
+    /* Esconde os itens do menu antes de serem exibidos */
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    /* Exibe o botão do menu mobile */
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Ajusta o tamanho do menu para telas menores (máx. 850px) */
+@media (max-width: 850px) {
+    .nav-list {
+        min-width: 20vw;
+    }
+
+    .mobile-menu {
+        right: 7vw;
+    }
+}
+
+/* Ajusta o menu e o botão para telas ainda menores (máx. 600px) */
+@media (max-width: 600px) {
+    .nav-list {
+        min-width: 25vw;
+    }
+
+    .mobile-menu {
+        right: 9vw;
+    }
+}
+
+/* Faz o menu aparecer quando o botão é ativado */
+.nav-list.active {
+    transform: translateX(0);
+}
+
+/* Animação para os itens do menu aparecerem suavemente */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Gira a primeira linha do botão para formar um "X" quando ativo */
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+/* Esconde a linha do meio do botão quando ativo */
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+/* Gira a terceira linha do botão para formar um "X" quando ativo */
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 92%;
+    left: 96%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.carrossel-container {
+    width: 100%;
+    max-width: 90vw;
+    overflow: hidden;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Configuração do carrossel */
+.caixa-carrossel.carrossel {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 15px));
+    }
+}
+
+/* Configuração das imagens que serão apresentadas no carrosel */
+.carrossel-img {
+    width: 480px;    /* De 400px para 480px */
+    height: 320px;   /* De 280px para 320px */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 30px;
+    transition: transform 0.3s;
+    margin-top: 0;
+}
+
+
+/* Indicando que quando o mouse passar por alguma imagem, a mesma aumentará levemente seu tamanho */
+.carrossel-img:hover {
+    transform: scale(1.10);
+    z-index: 1;
+}
+
+/* Indicando que a animação de carrossel deve parar quando o mouse estiver encima de alguma imagem */
+.caixa-carrossel.carrossel.carrossel:hover {
+    animation-play-state: paused;
+}
