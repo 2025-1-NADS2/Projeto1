@@ -11,7 +11,7 @@ if (!token) {
 // Se houver, tenta buscar os dados do usuário
 async function carregarUsuario() {
     try {
-        const resposta = await fetch("http://localhost:3000/api/usuarios/me", {
+        const resposta = await fetch("http://localhost:3000/api/private", {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -30,6 +30,7 @@ async function carregarUsuario() {
             }
         } else {
             // Token inválido ou expirado
+            alert("Token inválido ou expirado");
             localStorage.removeItem("token");
             window.location.href = "login.html";
         }
