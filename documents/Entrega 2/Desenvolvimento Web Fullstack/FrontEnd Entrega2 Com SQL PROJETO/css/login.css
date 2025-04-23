@@ -1,0 +1,111 @@
+* {
+    margin: 0; /* Remove a margem de todos os elementos */
+    padding: 0; /* Remove o preenchimento de todos os elementos */
+    box-sizing: border-box; /* Faz com que a largura e altura dos elementos incluam a borda e o preenchimento */
+}
+
+body {
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #23232e; /* Cor do texto */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin: 0; /* Remove a margem da página */
+    overflow: hidden; /* Remove a rolagem da página */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+}
+
+.logo {
+    position: fixed; /* Fixa a logo no topo esquerdo da página */
+    top: 25px; /* Coloca a logo a 25px do topo */
+    left: 25px; /* Coloca a logo a 25px da esquerda */
+    transition: opacity 0.2s ease; /* Faz a logo ficar mais transparente suavemente quando passar o mouse */
+}
+
+.logo:hover {
+    opacity: 0.5; /* Torna a logo 50% mais transparente quando passar o mouse */
+}
+
+.container {
+    position: absolute; /* Coloca o contêiner em posição absoluta */
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 50px 30px; /* Espaçamento dentro do contêiner */
+    border-radius: 8px; /* Borda arredondada */
+    height: 400px; /* Define a altura do contêiner */
+    width: 100%; /* Largura 100% do espaço disponível */
+    max-width: 400px; /* Largura máxima de 400px */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra suave em volta do contêiner */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites do contêiner */
+    top: 50%; /* Coloca o contêiner no meio verticalmente */
+    left: 50%; /* Coloca o contêiner no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para realmente centralizar */
+}
+
+h1 {
+    color: #23232e; /* Cor do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
+    padding: 10px; /* Espaçamento dentro do campo */
+    margin: 10px 0; /* Espaço acima e abaixo do campo */
+    border: 2px solid rgba(35, 35, 46, 0.75); /* Borda do campo com cor e opacidade */
+    border-radius: 4px; /* Borda arredondada */
+    font-size: 12px; /* Tamanho da fonte dentro do campo */
+}
+
+button {
+    background-color: #FF254A; /* Cor de fundo do botão */
+    color: #FFFFFF; /* Cor do texto no botão */
+    border: none; /* Remove a borda do botão */
+    padding: 12px; /* Espaçamento dentro do botão */
+    width: 100%; /* O botão ocupa toda a largura disponível */
+    border-radius: 4px; /* Borda arredondada no botão */
+    font-size: 16px; /* Tamanho da fonte no botão */
+    cursor: pointer; /* O cursor muda para uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Faz a cor de fundo mudar suavemente ao passar o mouse */
+}
+
+button:hover {
+    opacity: 0.8; /* Torna o botão um pouco transparente quando o mouse passa por cima */
+    background-color: #e0243b; /* Muda a cor de fundo do botão quando o mouse passa por cima */
+}
+
+#cadastrar {
+    position: relative; /* Posiciona o link de cadastro de forma relativa */
+    top: 20px; /* Coloca o texto um pouco mais abaixo */
+    color: #23232e; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+#cadastrar a {
+    color: #ff254a; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+@media (max-width: 768px) {
+    .container {
+        top: 50%; /* Ajusta o contêiner para o meio da tela em telas menores */
+        left: 50%; /* Centraliza o contêiner */
+        height: auto; /* Deixa a altura do contêiner ajustável */
+        width: 90%; /* Faz o contêiner ocupar 90% da largura da tela */
+        max-width: 100%; /* Faz com que o contêiner ocupe a largura total da tela em telas muito pequenas */
+        padding: 20px; /* Reduz o espaço interno */
+    }
+}
+
+@media (max-height: 500px) {
+    .container {
+        top: 225px; /* Ajusta a posição vertical para telas pequenas */
+        left: 50%; /* Centraliza o contêiner */
+        height: auto; /* Ajusta a altura */
+        position: fixed; /* Fixa o contêiner na tela */
+        padding: 20px; /* Reduz o espaço interno */
+    }
+}
