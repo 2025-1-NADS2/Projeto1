@@ -1,4 +1,3 @@
-// signup.js
 const URL_API_REGISTER = "http://localhost:3000/api/register";
 // Seleciona o formulário de cadastro
 const form = document.querySelector("form");

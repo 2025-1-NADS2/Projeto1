@@ -1,5 +1,3 @@
-// index.js
-
 // Recupera o token salvo (foi salvo no login.js)
 const token = localStorage.getItem("token");
 

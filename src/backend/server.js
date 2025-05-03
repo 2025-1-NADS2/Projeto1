@@ -1,33 +1,31 @@
-// CARREGA AS VARIÁVEIS DE AMBIENTE DO ARQUIVO .ENV
-require("dotenv").config();
+import express  from 'express'
+import cors from 'cors'
+import dotenv from 'dotenv'
+import routes from '../routes/authRoutes.js'
 
-// IMPORTA O APP CONFIGURADO (EXPRESS + ROTAS + MIDDLEWARES)
-const app = require("./app");
 
-// IMPORTA A INSTÂNCIA SEQUELIZE E OS MODELOS (CASO PRECISE FAZER OPERAÇÕES ANTES DO SYNC)
-const { sequelize } = require("./utils/db");
-const { User, Evento } = require("./models");
 
-// DEFINE A PORTA USANDO O .ENV OU 3000 COMO PADRÃO
-const PORT = process.env.PORT || 3000;
+dotenv.config()
+const app = express()
+const port = process.env.PORT || 3000
 
-// FUNÇÃO ASSÍNCRONA PARA INICIALIZAR O SERVIDOR E O BANCO
-const startServer = async () => {
-  try {
-    // SINCRONIZA O BANCO (SEQUELIZE MODELS COM MYSQL)
-    await sequelize.sync({ alter: true }); // alter: true => ajusta automaticamente sem apagar dados
 
-    console.log("✅ Banco de dados sincronizado com sucesso.");
+app.use(cors())
+app.use(express.json())
+app.use("/api", routes)
 
-    // INICIA O SERVIDOR
-    app.listen(PORT, () => {
-      console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
-    });
-  } catch (err) {
-    // EXIBE ERRO CASO A SINCRONIZAÇÃO FALHE
-    console.error("❌ Falha ao sincronizar o banco de dados:", err);
-  }
-};
 
-// CHAMA A FUNÇÃO DE INICIALIZAÇÃO
-startServer();
+
+app.use('/uploads', express.static('uploads'))
+app.use(express.static('public'))
+
+
+app.listen(port, ()=> {
+    console.log(`Servidor rodando em: http://localhost:${port}`)
+})
+
+
+const router = express.Router()
+export default router
+//para conectar o nodemon usar:
+//npx nodemon server.js 

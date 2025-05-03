@@ -1,19 +1,16 @@
-const jwt = require("jsonwebtoken");
+import jwt from 'jsonwebtoken'
 
-const authMiddleware = (req, res, next) => {
-    const authHeader = req.headers.authorization;
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
-        return res.status(401).json({ message: "Token não fornecido ou inválido." });
-    }
+// ===============================================Middleware de autenticação ======================================================
+export default function authMiddleware(req, res, next) {
+    const auth = req.headers.authorization
+    if (!auth) return res.status(401).send('Token ausente')
+    const token = auth.split(' ')[1]
 
-    const token = authHeader.split(" ")[1];
     try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = decoded;
-        next();
+        const decoded = jwt.verify(token, process.env.JWT_SECRET)
+        req.user = decoded
+        next()
     } catch (err) {
-        return res.status(401).json({ message: "Token inválido ou expirado." });
+        res.status(403).send('Token inválido ou expirado')
     }
-};
-
-module.exports = authMiddleware;
+}

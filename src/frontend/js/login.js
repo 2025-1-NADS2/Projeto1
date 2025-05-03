@@ -1,5 +1,3 @@
-// login.js
-
 // Seleciona o formulário de login
 const form = document.querySelector("form");
 
