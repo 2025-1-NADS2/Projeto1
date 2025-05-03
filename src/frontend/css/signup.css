@@ -1,53 +1,84 @@
 * {
-    margin: 0; /* Remove a margem de todos os elementos */
-    padding: 0; /* Remove o preenchimento de todos os elementos */
-    box-sizing: border-box; /* Faz com que a largura e altura dos elementos incluam a borda e o preenchimento */
+    margin: 0;
+    /* Remove a margem de todos os elementos */
+    padding: 0;
+    /* Remove o preenchimento de todos os elementos */
+    box-sizing: border-box;
+    /* Faz com que a largura e altura dos elementos incluam a borda e o preenchimento */
 }
 
 body {
-    display: flex; /* Usa flexbox para alinhar o conteúdo */
-    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
-    position: relative; /* Define a posição relativa para o corpo da página */
-    top: 100px; /* Ajusta a posição para baixo na página */
-    font-family: Arial, sans-serif; /* Define a fonte do texto */
-    background-color: #ffffff; /* Cor de fundo branca */
-    color: #23232e; /* Cor do texto */
-    height: 100vh; /* Ocupa toda a altura da tela */
-    margin: 0; /* Remove a margem da página */
+    display: flex;
+    /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente no centro */
+    position: relative;
+    /* Define a posição relativa para o corpo da página */
+    top: 100px;
+    /* Ajusta a posição para baixo na página */
+    font-family: Arial, sans-serif;
+    /* Define a fonte do texto */
+    background-color: #ffffff;
+    /* Cor de fundo branca */
+    color: #23232e;
+    /* Cor do texto */
+    height: 100vh;
+    /* Ocupa toda a altura da tela */
+    margin: 0;
+    /* Remove a margem da página */
 }
 
 .logo {
-    position: fixed; /* Fixa a logo no topo esquerdo da página */
-    top: 25px; /* Coloca a logo a 25px do topo */
-    left: 25px; /* Coloca a logo a 25px da esquerda */
-    transition: opacity 0.2s ease; /* Transição suave para a opacidade */
+    position: fixed;
+    /* Fixa a logo no topo esquerdo da página */
+    top: 25px;
+    /* Coloca a logo a 25px do topo */
+    left: 25px;
+    /* Coloca a logo a 25px da esquerda */
+    transition: opacity 0.2s ease;
+    /* Transição suave para a opacidade */
 }
 
 .logo:hover {
-    opacity: 0.5; /* Torna a logo 50% mais transparente ao passar o mouse */
+    opacity: 0.5;
+    /* Torna a logo 50% mais transparente ao passar o mouse */
 }
 
 .container {
-    background-color: #ffffff; /* Cor de fundo branca */
-    padding: 20px 30px; /* Espaçamento dentro do contêiner */
-    border-radius: 8px; /* Borda arredondada */
-    height: 400px; /* Define a altura do contêiner */
-    width: 100%; /* Largura total */
-    max-width: 400px; /* Largura máxima de 400px */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
+    background-color: #ffffff;
+    /* Cor de fundo branca */
+    padding: 20px 30px;
+    /* Espaçamento dentro do contêiner */
+    border-radius: 8px;
+    /* Borda arredondada */
+    height: 400px;
+    /* Define a altura do contêiner */
+    width: 100%;
+    /* Largura total */
+    max-width: 400px;
+    /* Largura máxima de 400px */
+    text-align: center;
+    /* Centraliza o texto dentro do contêiner */
 }
 
 h1 {
-    color: #23232e; /* Cor do título */
-    font-size: 2rem; /* Tamanho da fonte do título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #23232e;
+    /* Cor do título */
+    font-size: 2rem;
+    /* Tamanho da fonte do título */
+    margin-bottom: 20px;
+    /* Espaço abaixo do título */
 }
 
 label {
-    display: block; /* Faz o label ocupar uma linha inteira */
-    color: #323232; /* Cor do texto do label */
-    margin-bottom: 5px; /* Espaço abaixo do label */
-    text-align: left; /* Alinha o texto do label à esquerda */
+    display: block;
+    /* Faz o label ocupar uma linha inteira */
+    color: #323232;
+    /* Cor do texto do label */
+    margin-bottom: 5px;
+    /* Espaço abaixo do label */
+    text-align: left;
+    /* Alinha o texto do label à esquerda */
 }
 
 input[type="text"],
@@ -55,45 +86,71 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 select {
-    width: 100%; /* Faz os campos de entrada ocupar toda a largura disponível */
-    padding: 10px; /* Espaçamento dentro dos campos */
-    margin: 10px 0; /* Espaço acima e abaixo dos campos */
-    border: 2px solid rgba(35, 35, 46, 0.75); /* Borda com cor e opacidade */
-    border-radius: 4px; /* Borda arredondada */
-    font-size: 1rem; /* Tamanho da fonte nos campos */
+    width: 100%;
+    /* Faz os campos de entrada ocupar toda a largura disponível */
+    padding: 10px;
+    /* Espaçamento dentro dos campos */
+    margin: 10px 0;
+    /* Espaço acima e abaixo dos campos */
+    border: 2px solid rgba(35, 35, 46, 0.75);
+    /* Borda com cor e opacidade */
+    border-radius: 4px;
+    /* Borda arredondada */
+    font-size: 1rem;
+    /* Tamanho da fonte nos campos */
 }
 
 button {
-    background-color: #FF254A; /* Cor de fundo do botão */
-    color: #FFFFFF; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
-    padding: 12px; /* Espaçamento dentro do botão */
-    width: 100%; /* O botão ocupa toda a largura disponível */
-    border-radius: 4px; /* Borda arredondada no botão */
-    font-size: 1rem; /* Tamanho da fonte no botão */
-    cursor: pointer; /* O cursor muda para uma mãozinha quando passar sobre o botão */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo ao passar o mouse */
+    background-color: #FF254A;
+    /* Cor de fundo do botão */
+    color: #FFFFFF;
+    /* Cor do texto do botão */
+    border: none;
+    /* Remove a borda do botão */
+    padding: 12px;
+    /* Espaçamento dentro do botão */
+    width: 100%;
+    /* O botão ocupa toda a largura disponível */
+    border-radius: 4px;
+    /* Borda arredondada no botão */
+    font-size: 1rem;
+    /* Tamanho da fonte no botão */
+    cursor: pointer;
+    /* O cursor muda para uma mãozinha quando passar sobre o botão */
+    transition: background-color 0.3s ease;
+    /* Transição suave para a cor de fundo ao passar o mouse */
 }
 
 button:hover {
-    opacity: 0.8; /* Torna o botão um pouco transparente ao passar o mouse */
-    background-color: #e0243b; /* Muda a cor de fundo do botão ao passar o mouse */
+    opacity: 0.8;
+    /* Torna o botão um pouco transparente ao passar o mouse */
+    background-color: #e0243b;
+    /* Muda a cor de fundo do botão ao passar o mouse */
 }
 
 #fazer-login {
-    position: relative; /* Posiciona o link de login de forma relativa */
-    top: 13px; /* Coloca o link um pouco mais abaixo */
-    color: #23232e; /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado do link */
+    position: relative;
+    /* Posiciona o link de login de forma relativa */
+    top: 13px;
+    /* Coloca o link um pouco mais abaixo */
+    color: #23232e;
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
 }
 
 #fazer-login a {
-    color: #ff254a; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado do link */
+    color: #ff254a;
+    /* Cor do texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
 }
 
 #error-msg {
-    margin-top: 10px; /* Espaço acima da mensagem de erro */
-    font-size: 0.9rem; /* Tamanho da fonte da mensagem de erro */
-    color: #FF254A; /* Cor da mensagem de erro */
+    margin-top: 10px;
+    /* Espaço acima da mensagem de erro */
+    font-size: 0.9rem;
+    /* Tamanho da fonte da mensagem de erro */
+    color: #FF254A;
+    /* Cor da mensagem de erro */
 }

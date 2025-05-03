@@ -30,7 +30,7 @@ async function carregarUsuario() {
             }
         } else {
             // Token inválido ou expirado
-            alert("Token inválido ou expirado");
+            alert("Sessão expirada! Por favor, faça login novamente.");
             localStorage.removeItem("token");
             window.location.href = "login.html";
         }

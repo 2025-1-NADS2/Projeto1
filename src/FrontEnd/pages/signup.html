@@ -1,39 +1,49 @@
-<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
-<html lang="pt-BR"> <!-- Define o idioma da página como português (Brasil) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva em dispositivos móveis -->
-    <title>Cadastro</title> <!-- Título da página, aparece na aba do navegador -->
-    <link rel="stylesheet" href="../css/signup.css"> <!-- Link para o arquivo de estilo (CSS) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/signup.css">
 </head>
 
 <body>
     <nav> <!-- Barra de navegação -->
-        <a class="logo" href="index.html"><img src="../../../images/Logo.svg" alt=""></a> <!-- Logo da página, que leva para a home quando clicado -->
+        <a class="logo" href="index.html"><img src="../../../images/Logo.svg" alt=""></a>
+        <!-- Logo da página, que leva para a home quando clicado -->
     </nav>
-    <div class="container"> <!-- Contêiner que envolve o conteúdo do formulário -->
-        <h1>Cadastre-se</h1> <!-- Título da página de cadastro -->
+    <div class="container">
+        <h1>Cadastre-se</h1>
         <form id="signup-form"> <!-- Formulário de cadastro -->
-            <input type="text" id="nome" placeholder="Nome" required> <!-- Campo para o nome do usuário -->
+            <!-- Campo para o nome do usuário -->
+            <input type="text" id="nome" placeholder="Nome" required>
 
-            <input type="text" id="sobrenome" placeholder="Sobrenome" required> <!-- Campo para o sobrenome do usuário -->
-            
-            <input type="email" id="email" placeholder="E-mail" required> <!-- Campo para o e-mail do usuário -->
+            <!-- Campo para o sobrenome do usuário -->
+            <input type="text" id="sobrenome" placeholder="Sobrenome" required>
 
-            <input type="password" id="senha" placeholder="Senha" required> <!-- Campo para a senha do usuário -->
+            <!-- Campo para o e-mail do usuário -->
+            <input type="email" id="email" placeholder="E-mail" required>
 
-            <input type="password" id="passwordagain" placeholder="Confirme sua senha" required> <!-- Campo para confirmar a senha -->
+            <!-- Campo para a senha do usuário -->
+            <input type="password" id="senha" placeholder="Senha" required>
 
-            <input type="text" id="telefone" placeholder="Telefone" required> <!-- Campo para o telefone do usuário -->
+            <!-- Campo para confirmar a senha -->
+            <input type="password" id="passwordagain" placeholder="Confirme sua senha" required>
 
-            <input type="text" id="cpf" placeholder="CPF" required> <!-- Campo para o CPF do usuário -->
+            <!-- Campo para o telefone do usuário -->
+            <input type="text" id="telefone" placeholder="Telefone" required>
 
-            <button type="submit">Cadastrar</button> <!-- Botão para enviar o formulário e realizar o cadastro -->
+            <!-- Campo para o CPF do usuário -->
+            <input type="text" id="cpf" placeholder="CPF" required>
+
+            <!-- Botão para enviar o formulário e realizar o cadastro -->
+            <button type="submit">Cadastrar</button>
         </form>
-        <p id="fazer-login">Já tem uma conta? <a href="login.html">Fazer login</a></p> <!-- Link para a página de login caso o usuário já tenha uma conta -->
+        <!-- Link para a página de login caso o usuário já tenha uma conta -->
+        <p id="fazer-login">Já tem uma conta? <a href="login.html">Fazer login</a></p>
     </div>
-    <script src="../js/signup.js"></script> <!-- Link para o arquivo JavaScript que pode validar o formulário ou tratar dados -->
+    <script src="../js/signup.js"></script>
 </body>
 
 </html>

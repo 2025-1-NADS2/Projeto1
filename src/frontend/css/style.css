@@ -54,10 +54,13 @@ nav {
 
 /* Especificações da imagem de fundo */
 main {
-    height: 100vh; /* Faz o main ocupar a altura total da tela */
+    height: 100vh;
+    /* Faz o main ocupar a altura total da tela */
     display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center;     /* Alinha verticalmente */
+    justify-content: center;
+    /* Alinha horizontalmente */
+    align-items: center;
+    /* Alinha verticalmente */
 }
 
 
@@ -278,8 +281,10 @@ main {
 
 /* Configuração das imagens que serão apresentadas no carrosel */
 .carrossel-img {
-    width: 480px;    /* De 400px para 480px */
-    height: 320px;   /* De 280px para 320px */
+    width: 480px;
+    /* De 400px para 480px */
+    height: 320px;
+    /* De 280px para 320px */
     object-fit: cover;
     border-radius: 12px;
     margin-right: 30px;
