@@ -9,7 +9,9 @@ namespace ConsoleApp2App
     {
         static void Main(string[] args)
         {
+            //Criando um onjeto da lista de eventos
             List<Eventos_Filtro> listaEventos = new List<Eventos_Filtro>();
+            //Variável para tornar o tratamento de evento iterável
             string opcao;
 
             do
@@ -27,13 +29,17 @@ namespace ConsoleApp2App
 
                 switch (opcao)
                 {
+                    //Criar um evento
                     case "1":
                         Console.Clear();
                         Eventos_Filtro.CriarEvento(listaEventos);
-                        break;
+                    break;
 
+                   
+                    //Listar todos os eventos
                     case "2":
                         Console.Clear();
+                        //Retorna a seguinte mensagem de erro caso não haja nenhum evento
                         if (listaEventos.Count == 0)
                         {
                             Console.WriteLine("Nenhum evento cadastrado.");
@@ -42,7 +48,7 @@ namespace ConsoleApp2App
                         {
                             Console.WriteLine("--- Lista de Todos os Eventos ---");
                             Console.WriteLine("Total de eventos cadastrados: " + listaEventos.Count);
-                            foreach (var evento in listaEventos)
+                            foreach (var evento in listaEventos) //Imprimindo todos os dados do evento para cada evento encntrado
                             {
                                 Console.WriteLine($"\nID: {evento.ID}");
                                 Console.WriteLine($"Nome: {evento.Nome}");
@@ -55,40 +61,45 @@ namespace ConsoleApp2App
                         }
                         Console.WriteLine("\nPressione qualquer tecla para continuar...");
                         Console.ReadKey();
-                        break;
+                    break;
 
+                    //Ordenar eventos
                     case "3":
                         Console.Clear();
                         Eventos_Filtro.OrdenarEvento(listaEventos);
                         Console.WriteLine("\nPressione qualquer tecla para continuar...");
                         Console.ReadKey();
-                        break;
+                    break;
 
+                    //Filtrar eventos
                     case "4":
                         Console.Clear();
                         Console.WriteLine("--- Lista de Todos os Eventos ---");
                         Console.WriteLine("Total de eventos cadastrados: " + listaEventos.Count);
                         Eventos_Filtro.FiltrarEvento(listaEventos);
-                        break;
+                    break;
 
+                    //Excluir evento
                     case "5":
                         Console.Clear();
                         Console.WriteLine("--- Lista de Todos os Eventos ---");
                         Console.WriteLine("Total de eventos cadastrados: " + listaEventos.Count);
                         Eventos_Filtro.DeletarEvento(listaEventos);
-                        break;
+                    break;
 
+                    //Fechando o programa
                     case "0":
                         Console.WriteLine("Saindo...");
-                        break;
+                    break;
 
+                    //Retorna o seguinte erro caso o usuário não digite nenhuma das opções válidas:
                     default:
                         Console.WriteLine("Opção inválida! Tente novamente.");
                         Console.ReadKey();
-                        break;
+                    break;
                 }
 
-            } while (opcao != "0");
+            } while (opcao != "0"); //Condição para não fechar o console
         }
     }
 }

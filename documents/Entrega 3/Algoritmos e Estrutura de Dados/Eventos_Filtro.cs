@@ -192,7 +192,7 @@ namespace ConsoleApp2
 
             string continuar;
 
-            //Opções de filtro para o evento
+            //Tipos de ordenação de evento
             Console.WriteLine("Escolha o critério para ordenar os eventos:");
             Console.WriteLine("1 - ID");
             Console.WriteLine("2 - Nome");
@@ -243,11 +243,10 @@ namespace ConsoleApp2
                 }
             }
 
-                #endregion
+            #endregion
 
                 Console.WriteLine("\n--- Eventos ordenados ---");
-                //Exibição de cada evento dentro da lista de eventos
-                foreach (var evento in eventos)
+                foreach (var evento in eventos) //Exibição de cada evento dentro da lista de eventos
                 {
                     Console.WriteLine($"\nID: {evento.ID}");
                     Console.WriteLine($"Nome: {evento.Nome}");
@@ -261,8 +260,10 @@ namespace ConsoleApp2
 
         #region Funções de filtro
         
+        //Função para filtrar os eventos
         public static void FiltrarEvento(List<Eventos_Filtro> eventos)
         {
+            //Caso não tenha eventos, retorna a seguinte mensagem de erro
             if (eventos.Count == 0)
             {
                 Console.WriteLine("Não há eventos cadastrados para filtrar.");
@@ -271,29 +272,35 @@ namespace ConsoleApp2
                 return;
             }
 
+            //Criando uma "cópia" da lista de eventos para que a original não seja modificada
             var eventosFiltrar = new List<Eventos_Filtro>(eventos);
 
-            bool continuarFiltrando = true;
+            //Declaração da variável para tornar o processo de filtrar os eventos iterativo
             string continuar;
 
             do
             {
+                //Opções de filtro
                 Console.WriteLine("\nEscolha o critério para filtrar os eventos:");
                 Console.WriteLine("1 - ID");
                 Console.WriteLine("2 - Data");
                 Console.WriteLine("3 - Preço");
                 Console.Write("Opção: ");
 
+                //Switch baseado na escolha do usuário
                 switch (Console.ReadLine())
                 {
+                    //Filtrar evento por ID
                     case "1": eventosFiltrar = FiltrarID(eventosFiltrar); break;
+                    //Filtrar evento por Data
                     case "2": eventosFiltrar = FiltrarData(eventosFiltrar); break;
+                    //Filtrar o evento por Preço
                     case "3": eventosFiltrar = FiltrarPreco(eventosFiltrar); break;
-                    default:
-                        Console.WriteLine("Opção inválida.");
-                        break;
+                    //Retorna o seguinte erro caso o usuário não digite nenhuma das opções válidas:
+                    default: Console.WriteLine("Opção inválida."); break;
                 }
                 
+                //Imprimir todos os dados do evento para cada evento achado
                 foreach (var evento in eventosFiltrar)
                 {
                     Console.WriteLine($"\nID: {evento.ID}");
@@ -305,17 +312,21 @@ namespace ConsoleApp2
                     Console.WriteLine($"Preço: R$ {evento.Preco:F2}");
                 }
 
+                //Caso a resposta seja 's', repete o processo
                 Console.Write("\nDeseja adicionar outro filtro? (s/n): ");
                 continuar = Console.ReadLine();
             } while (continuar == "s");
+            //Escolher sim traz a oportunidade de aplicar mais de um filtro
         }
 
         #region Filtros
 
+        //Método para filtrar com base no ID
         public static List<Eventos_Filtro> FiltrarID(List<Eventos_Filtro> eventos)
         {
             Console.Write("\nDigite o ID mínimo: ");
             int idMin;
+            //Caso o valor lido não seja válido, retorna o seguinte erro:
             while (!int.TryParse(Console.ReadLine(), out idMin))
             {
                 Console.WriteLine("Valor inválido. Tente novamente:");
@@ -323,13 +334,16 @@ namespace ConsoleApp2
 
             Console.Write("\nDigite o ID máximo: ");
             int idMax;
+            //Caso o valor lido não seja válido, retorna o seguinte erro:
             while (!int.TryParse(Console.ReadLine(), out idMax) || idMax < idMin)
             {
                 Console.WriteLine("Valor inválido ou menor que o mínimo. Tente novamente:");
             }
 
+            //Criação de um objeto da lista
             var eventosFiltrados = new List<Eventos_Filtro>();
 
+            //Compara os IDs fornecidos pelo usuário com os IDs presentes na lista
             foreach (var evento in eventos)
             {
                 if (evento.ID >= idMin && evento.ID <= idMax)
@@ -338,16 +352,19 @@ namespace ConsoleApp2
                 }
             }
 
+            //Caso não haja nenhum evento com as seguintes condições, retorna o seguinte erro:
             if (eventosFiltrados.Count == 0)
                 Console.WriteLine("Nenhum evento encontrado nesse intervalo de ID.");
 
             return eventosFiltrados;
         }
        
+       //Método para filtrar com base na Data
         public static List<Eventos_Filtro> FiltrarData(List<Eventos_Filtro> eventos)
         {
             Console.Write("\nDigite a data mínima (dd/mm/aaaa): ");
             DateTime dataMin;
+            //Caso a data fornecida não seja válida, retorna o seguinte erro:
             while (!DateTime.TryParse(Console.ReadLine(), out dataMin))
             {
                 Console.WriteLine("Data inválida. Tente novamente:");
@@ -355,13 +372,16 @@ namespace ConsoleApp2
 
             Console.Write("\nDigite a data máxima (dd/mm/aaaa): ");
             DateTime dataMax;
+            //Caso a data fornecida não seja válida, retorna o seguinte erro:
             while (!DateTime.TryParse(Console.ReadLine(), out dataMax) || dataMax < dataMin)
             {
                 Console.WriteLine("Data inválida ou menor que a mínima. Tente novamente:");
             }
 
+            //Criação de um objeto da lista
             var eventosFiltrados = new List<Eventos_Filtro>();
 
+            //Compara as datas fornecidas pelo usuário com as datas presentes na lista
             foreach (var evento in eventos)
             {
                 if (evento.Data.Date >= dataMin.Date && evento.Data.Date <= dataMax.Date)
@@ -370,6 +390,7 @@ namespace ConsoleApp2
                 }
             }
 
+            //Caso não haja nenhum evento com as seguintes condições, retorna o seguinte erro:
             if (eventosFiltrados.Count == 0)
                 Console.WriteLine("Nenhum evento encontrado nesse intervalo de datas.");
 
@@ -380,6 +401,7 @@ namespace ConsoleApp2
         {
             Console.Write("\nDigite o preço mínimo: ");
             double precoMin;
+            //Caso o valor lido não seja válido, retorna o seguinte erro:
             while (!double.TryParse(Console.ReadLine(), out precoMin))
             {
                 Console.WriteLine("Valor inválido. Tente novamente:");
@@ -387,13 +409,16 @@ namespace ConsoleApp2
 
             Console.Write("\nDigite o preço máximo: ");
             double precoMax;
+            //Caso o valor lido não seja válido, retorna o seguinte erro:
             while (!double.TryParse(Console.ReadLine(), out precoMax) || precoMax < precoMin)
             {
                 Console.WriteLine("Valor inválido ou menor que o mínimo. Tente novamente:");
             }
 
+            //Criação de um objeto da lista
             var eventosFiltrados = new List<Eventos_Filtro>();
 
+            //Compara os preços fornecidos pelo usuário com os preços presentes na lista
             foreach (var evento in eventos)
             {
                 if (evento.Preco >= precoMin && evento.Preco <= precoMax)
@@ -402,6 +427,7 @@ namespace ConsoleApp2
                 }
             }
 
+            //Caso não haja nenhum evento com as seguintes condições, retorna o seguinte erro:
             if (eventosFiltrados.Count == 0)
                 Console.WriteLine("Nenhum evento encontrado nesse intervalo de preço.");
 
@@ -478,6 +504,7 @@ namespace ConsoleApp2
                     }
                 }
 
+                //Caso o ID não corresponde a nenhum evento, retorna o seguinte erro:
                 if (!encontrado)
                 {
                     Console.WriteLine("\nEvento não encontrado. Tente novamente.");
