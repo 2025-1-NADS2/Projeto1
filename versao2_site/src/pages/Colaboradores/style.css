@@ -1,0 +1,117 @@
+
+.Titulo-pagina {
+  font-family: "Inter-ExtraLight Italic", Helvetica;
+  font-size: 32px;
+  margin-top: 130px;
+  color: #333;
+}
+
+.colaboradores-container {
+  padding: 1,8rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.colaboradores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0,3 rem;
+  margin-top: 50px;
+}
+
+.colaborador-card {
+  width: 200px;
+  text-align: center;
+}
+
+.colaborador-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  border: 5px solid black;
+  object-fit: cover;
+}
+
+
+.subtitulo {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card-destaque {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 280px;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-destaque img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-destaque h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-destaque h4 {
+  color: #0066cc;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.card-destaque p {
+  font-size: 0.9rem;
+  color: #333;
+
+}
+
+
+.fotos-voluntarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 0fr));
+  gap: 10px;
+  
+  justify-items: center;
+  margin: 80px;
+}
+
+.foto-voluntario {
+  width: 90px;
+  height: 90px;
+  border-radius: 3%;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.foto-voluntario:hover {
+  transform: scale(1.1);
+}
+.Voluntarios{
+  margin-top: 50px;
+  font-family: "Inter", Helvetica;
+  font-size: 26px;
+}
+
+.Voluntarios2{
+  margin-top: 20px;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+}

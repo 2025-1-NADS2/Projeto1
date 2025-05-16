@@ -1,0 +1,101 @@
+.action-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.action-button-hero {
+  max-width: 900px;
+  width: 70%;
+  text-align: center;
+  padding: 50px 10px;
+  border-radius: 16px;
+  background: #fff0f4;
+  box-sizing: inherit;
+  box-shadow: 0 8px 24px rgba(0, 0, 1, 1.08);
+}
+
+.action-button-title .action-button-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #474747;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.action-button-title .action-button-description {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.action-button-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-button-event,
+.action-button-link {
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button-event {
+  background-color: #f12929;
+  color: #fff;
+}
+
+.action-button-event:hover {
+  background-color: #c91d1d;
+}
+
+.action-button-link {
+  background-color: #fff;
+  color: #f12929;
+  border: 2px solid #f12929;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button-link:hover {
+  background-color: #f12929;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .action-button-title .action-button-heading {
+      font-size: 2rem;
+  }
+
+  .action-button-title .action-button-description {
+      font-size: 1rem;
+  }
+
+  .action-button-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .action-button-event,
+  .action-button-link {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+  

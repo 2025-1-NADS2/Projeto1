@@ -1,0 +1,1 @@
+export { Segmento } from "./Segmento";

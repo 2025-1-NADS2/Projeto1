@@ -1,0 +1,116 @@
+/* Container principal da seção de impacto */
+.impact-section {
+  padding: 60px 20px;
+  background-color: #fff0f4;
+  text-align: center;
+}
+
+/* Título da seção */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Grade de estatísticas */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+/* Cada bloco de estatística */
+.stat-item {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Ícone */
+.stat-item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+/* Valor estatístico */
+.stat-value {
+  font-size: 2rem;
+  color: #f12929;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+/* Rótulo */
+.stat-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Linha de imagens */
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.impact-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+  }
+
+  .images-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact-img {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+  
+  .impact-img {
+    border: 6px solid #FE284A;
+    border-radius: 50px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+  }
+  
+  

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Base header */
+.header {
+  background-color: #ededed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Top bar usando Grid */
+.top-bar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+
+}
+
+/* Logo + nome */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  grid-column: 1 / 3;
+  margin-top: 0px;
+
+}
+
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+/* Botões à direita */
+.actions {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  gap: 18px;
+  margin-left: auto;
+  grid-column: 5 / 8;
+}
+
+.whatsapp img {
+  width: 24px;
+  height: 24px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  padding: 6px 12px;
+  cursor: pointer;
+
+}
+
+.login-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 10px;
+}
+
+.donate-button {
+  background: red;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+/* Menu bar */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 30px;
+}
+
+
+
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #453f3f;
+  display: block;
+}
+
+/* Navegação */
+.nav-items {
+  display: none;
+  flex-direction: column;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0;
+
+}
+
+.nav-items a:hover {
+  color: #19c2bd;
+  /* Azul */
+  text-shadow: 0 0 6px #BBFBF9;
+  /* Sombra azul suave */
+}
+
+.nav-items a {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #453f3f;
+  text-decoration: none;
+  text-align: right;
+  transition: color 0.3s, font-weight 0.3s, text-shadow 0.3s;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Mostrar menu quando aberto */
+.nav-items.open {
+  display: flex;
+}
+
+/* Layout desktop */
+@media (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .nav-items a {
+    text-align: center;
+  }
+
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 767px) {
+  .top-bar {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .logo-area {
+    grid-column: 1 / 3;
+  }
+
+  .actions {
+    grid-column: 3 / 6;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items a {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
+  .login-button {
+    background: #f2f2f2;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .donate-button {
+    background: linear-gradient(180deg, #ffe910 0%, #edd80f 100%);
+    border: none;
+    padding: 13px 18px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    color: #453f3f;
+  }
+}

@@ -1,0 +1,1 @@
+export { Colaboradores } from "./Colaboradores";

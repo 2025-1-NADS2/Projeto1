@@ -1,0 +1,1 @@
+export { Marcas } from "./Marcas";

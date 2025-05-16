@@ -1,0 +1,117 @@
+.marcas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Titulo-pagina {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.brands-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 125px;
+}
+
+.brands-gallery img {
+ 
+  height: auto;
+  width: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: grayscale(10%);
+}
+
+
+.brands-gallery img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.fatec-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.fatec-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3A4955;
+  font-family: Inter;
+  font-size: 42px;
+  letter-spacing: -0.5px;
+  line-height: 30%; /* 76.8px */
+}
+
+.fatec-subname {
+  font-size: 0.85rem;
+  color: #A51820;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+
+
+
+.fatec-text:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .brands-gallery {
+    gap: 20px;
+  }
+
+  .brands-gallery img {
+    max-height: 40px;
+  }
+
+  .fatec-text {
+    min-width: 80px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-gallery {
+  margin-top: 30px;
+  max-width: 600px;
+  padding: 15px 5px;
+  gap: 15px;
+  margin: 90px;
+  }
+
+  .brands-gallery img {
+    max-height: 500px;
+    max-width: 50%;
+   
+  
+}
+  .fatec-text {
+    max-height: 100px;
+    max-width: 30%;
+  }
+  .fatec-name {
+    font-size: 26px;
+  }
+  .fatec-subname {
+    font-size: 12px;
+  }
+ } 

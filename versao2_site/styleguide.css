@@ -1,0 +1,105 @@
+:root {
+    --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    --colors-text-text-default: var(--colors-text-default-default);
+    --variable-collection-spacing-m: 48px;
+   /* Paleta de cores */
+    --cor-amarelo: #FFE910;
+    --cor-dourado: #D3C00D;
+    --cor-verde-agua-claro: #BBFBF9;
+    --cor-verde-agua: #1CEAE4;
+    --cor-verde-claro: #D1EDDA;
+    --cor-amarelo-pastel: #FFFAC5;
+    --cor-amarelo-muito-claro: #FFFBDE;
+    --cor-cinza-escuro: #4F4F4F;
+    --cor-cinza: #B3B3B3;
+    --cor-verde-acizentado: #B7D2C1;
+    --cor-rosa: #FF254A;
+    --cor-rosa-claro: #F4C2CB;
+
+   /* Tipografia */
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 20px;
+
+    /* Borda */
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 16px;
+    
+    /* Tipografia - Fontes */
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+
+    /* Tamanhos de fonte */
+    --tamanho-titulo-principal: 32px;
+    --tamanho-titulo-destaque: 64px;
+    --tamanho-subtitulo-secao: 32px;
+    --tamanho-subtitulo: 16px;
+    --tamanho-paragrafo: 18px;
+    --tamanho-subtitulo-pequeno: 15px;
+    --tamanho-texto-pequeno: 10px;
+
+    /* Espessura de fonte */
+    --peso-font-normal: 400;
+    --peso-font-destaque: 700;
+    --peso-font-secao: 600;
+
+    /* Linhas de altura */
+    --linha-altura-titulo-principal: 43.2px;
+    --linha-altura-titulo-destaque: 96px;
+    --linha-altura-subtitulo-secao: 43.2px;
+    --linha-altura-paragrafo: 27px;
+    --linha-altura-subtitulo: 24px;
+    --linha-altura-subtitulo-pequeno: 22.5px;
+    --linha-altura-texto-pequeno: 15px;
+  }
+
+  /* Exemplo de como usar as variáveis de tipografia */
+  .titulo-principal {
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-titulo-principal);
+    font-weight: var(--peso-font-destaque);
+    line-height: var(--linha-altura-titulo-principal);
+  }
+
+  .titulo-destaque {
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-titulo-destaque);
+    font-weight: var(--peso-font-secao);
+    line-height: var(--linha-altura-titulo-destaque);
+  }
+
+  .subtitulo-secao {
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-subtitulo-secao);
+    font-weight: var(--peso-font-secao);
+    line-height: var(--linha-altura-subtitulo-secao);
+  }
+
+  .subtitulo {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-subtitulo);
+    font-weight: var(--peso-font-normal);
+    line-height: var(--linha-altura-subtitulo);
+  }
+
+  .paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-paragrafo);
+    font-weight: var(--peso-font-normal);
+    line-height: var(--linha-altura-paragrafo);
+  }
+
+  .subtitulo-pequeno {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-subtitulo-pequeno);
+    font-weight: var(--peso-font-normal);
+    line-height: var(--linha-altura-subtitulo-pequeno);
+  }
+
+  .texto-pequeno {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-texto-pequeno);
+    font-weight: var(--peso-font-normal);
+    line-height: var(--linha-altura-texto-pequeno);
+  }

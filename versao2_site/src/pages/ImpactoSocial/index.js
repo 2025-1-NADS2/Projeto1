@@ -1,0 +1,1 @@
+export { ImpactoSocial } from "./ImpactoSocial";
