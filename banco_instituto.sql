@@ -1,5 +1,5 @@
-CREATE DATABASE instituto_criativo;
-USE instituto_criativo;
+CREATE DATABASE banco_instituto;
+USE banco_instituto;
 
 /*FUNÇÃO PARA MOSTRAR TODAS AS TABELAS*/
 SHOW TABLES;
