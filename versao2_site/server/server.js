@@ -21,6 +21,3 @@ app.listen(port, ()=> {
 })
 
 console.log("Server rodando")
-
-//para conectar o nodemon usar:
-//npx nodemon server.js

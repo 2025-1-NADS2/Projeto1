@@ -1,14 +1,37 @@
 import React, { useState } from 'react';
-//import { Header } from "../../components/Header/Header";
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    console.log('Login:', { email, senha });
-    // Aqui você pode adicionar a lógica de autenticação
+    try {
+      const response = await axios.post('http://localhost:3000/api/usuario/login', {
+        email,
+        senha,
+      });
+
+      // Exibe mensagem de sucesso
+      window.alert('Login realizado com sucesso!');
+      
+      // Salva o usuário no localStorage (opcional, caso queira salvar o login)
+      localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
+
+      // Redireciona para a página principal
+      navigate('/');
+    } catch (error) {
+      console.error('Erro no login:', error);
+      if (error.response && error.response.data.error) {
+        setMessage(error.response.data.error);
+      } else {
+        setMessage('Erro ao realizar login.');
+      }
+    }
   };
 
   return (
@@ -31,6 +54,7 @@ export const Login = () => {
         />
         <button type="submit">Login</button>
       </form>
+      {message && <p>{message}</p>}
     </div>
   );
 };

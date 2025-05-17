@@ -20,29 +20,29 @@ export const Signup = () => {
       setMessage("O nome deve ter entre 3 e 50 caracteres.");
       return;
     }
-    
+
     if (sobrenome_usuario.length < 3 || sobrenome_usuario.length > 255) {
       setMessage("O nome deve ter entre 3 e 50 caracteres.");
       return;
     }
-  
+
     if (senha.length < 8 || !/[A-Z]/.test(senha) || !/[0-9]/.test(senha)) {
       setMessage("A senha deve ter pelo menos 8 caracteres, uma letra maiúscula e um número.");
       return;
     }
-  
+
     const cpfRegex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/; // Formato: 000.000.000-00
     if (!cpfRegex.test(cpf)) {
       setMessage("CPF inválido. Use o formato: 000.000.000-00");
       return;
     }
-  
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setMessage("Email inválido. Use o formato: teste@exemplo.com");
       return;
     }
-  
+
     if (telefone.length < 10 || telefone.length > 20) {
       setMessage("Telefone inválido. Use o formato: 00000-0000");
       return;
