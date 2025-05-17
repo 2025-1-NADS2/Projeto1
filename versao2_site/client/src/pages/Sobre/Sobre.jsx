@@ -6,7 +6,7 @@ import { Segmento } from "../Segmento";
 import "./style.css";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/footer/footer";
-import criancasFoto from "../Sobre/perspectiva-de-adolescentes-diversos-que-praticam-actividades-de-saude-e-bem-estar-para-si-mesmos-e-para-sua-comunidade.jpg";
+import criancasFoto from "./perspectiva-de-adolescentes-diversos-que-praticam-actividades-de-saude-e-bem-estar-para-si-mesmos-e-para-sua-comunidade.jpg";
 
 
 export const Sobre = () => {
