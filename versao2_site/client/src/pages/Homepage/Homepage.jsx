@@ -76,7 +76,7 @@ export const Homepage = () => {
 
             <a
               className="button-3"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeG9lzGfHVSifOnKUA7CdMQSI_L8o0m-WXm2jucjtVtJXuqWw/viewform"
+              href="/signup"
               rel="noopener noreferrer"
               target="_blank"
             >

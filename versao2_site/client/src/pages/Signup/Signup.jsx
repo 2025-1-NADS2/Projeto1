@@ -17,7 +17,12 @@ export const Signup = () => {
 
     //#region VALIDAÇÃO DE DADOS
     if (nome_usuario.length < 3 || nome_usuario.length > 255) {
-      setMessage("O nome_usuario deve ter entre 3 e 50 caracteres.");
+      setMessage("O nome deve ter entre 3 e 50 caracteres.");
+      return;
+    }
+    
+    if (sobrenome_usuario.length < 3 || sobrenome_usuario.length > 255) {
+      setMessage("O nome deve ter entre 3 e 50 caracteres.");
       return;
     }
   
@@ -34,18 +39,26 @@ export const Signup = () => {
   
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setMessage("Email inválido.");
+      setMessage("Email inválido. Use o formato: teste@exemplo.com");
       return;
     }
   
     if (telefone.length < 10 || telefone.length > 20) {
-      setMessage("Telefone inválido. Verifique o número digitado.");
+      setMessage("Telefone inválido. Use o formato: 00000-0000");
       return;
     }
     //#endregion
 
     try {
-      console.log("Enviando para a API:", { nome_usuario, sobrenome_usuario, telefone, email, cpf, senha }); // Adicionei esse console.log
+      console.log("Enviando para a API:", {
+        nome_usuario,
+        sobrenome_usuario,
+        telefone,
+        email,
+        cpf,
+        senha,
+      });
+
       const response = await axios.post('http://localhost:3000/api/usuario', {
         nome_usuario,
         sobrenome_usuario,
@@ -54,9 +67,14 @@ export const Signup = () => {
         cpf,
         senha,
       });
+
       setId(response.data.id);
       setMessage('Cadastro realizado com sucesso!');
       console.log('Cadastro:', response.data);
+
+      // ✅ Exibe um alerta e redireciona para a página inicial
+      window.alert("Cadastro realizado com sucesso!");
+      window.location.href = '/homepage';
     } catch (error) {
       console.error('Erro no cadastro:', error.response.data);
       setMessage('Erro ao cadastrar. Verifique os dados.');
