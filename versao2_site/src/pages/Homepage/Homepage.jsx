@@ -52,7 +52,8 @@ export const Homepage = () => {
 
 
   return (
-    <> <Header />
+    <>
+      <Header />
       <div className="Seao">
 
 
@@ -67,9 +68,11 @@ export const Homepage = () => {
           </div>
 
           <div className="button-container">
-            <button className="button-2">
-              <div className="text-wrapper-9">Eventos</div>
-            </button>
+            <a href="#eventos-carrossel">
+              <button className="button-2">
+                <div className="text-wrapper-9">Eventos</div>
+              </button>
+            </a>
 
             <a
               className="button-3"
@@ -82,7 +85,7 @@ export const Homepage = () => {
           </div>
         </div>
 
-        <section className="eventos-carrossel">
+        <section id="eventos-carrossel" className="eventos-carrossel">
           <h2 className="titulo-secao">Fique por dentro</h2>
           <div className="carrossel-container">
             <button className="seta esquerda">&#8249;</button>
