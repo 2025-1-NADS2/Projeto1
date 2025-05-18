@@ -2,6 +2,9 @@
 
 Este Design System tem como objetivo padronizar a identidade visual e a experiência do usuário ao longo de todas as interfaces do projeto. Ele define diretrizes para cores, tipografia, espaçamentos, estilos e componentes reutilizáveis, assegurando consistência visual e facilidade de manutenção.
 
+```markdown
+👉 [Visualize o Design System no Figma](https://www.figma.com/design/O8lefEx2SXvh5b3sKo37zh/Instituto-Criativo?node-id=441-7&t=9R5WzpgDGr8Wdghz-1)
+
 ---
 
 ## 🎨 Paleta de Cores
