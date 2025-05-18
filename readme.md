@@ -19,6 +19,8 @@
 | Gustavo Roberto      | [GitHub](https://github.com/DevGustar)                              |
 | Gustavo Henrique     | [LinkedIn](https://www.linkedin.com/in/gustavo-henrique-da-silva-santos-453822326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
 | Lucas Alves          | [LinkedIn](https://www.linkedin.com/in/lucas-alves-bernardo-093871252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)|
+| Vitor Santos         | [LinkedIn](https://github.com/vs7black)|
+
 
 ## 👨‍🏫 Orientadores
 
