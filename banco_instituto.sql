@@ -20,44 +20,35 @@ SELECT * FROM usuario;
 DESCRIBE usuario;
 
 
-/*CRIAÇÃO DA TABELA PARTICIPANTE*/
-CREATE TABLE participante (
-    id_participante INT PRIMARY KEY AUTO_INCREMENT,
-    id_usuario INT UNIQUE,
-    tipo_ingresso VARCHAR(255) NOT NULL,
-    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
-);
-/*MOSTRA DADOS DA TABELA PARTICIPANTE*/
-SELECT * FROM participante;
-/*MOSTRAR A ESTRUTURA DA TABELA PARTICIPANTE*/
-DESCRIBE participante;
-
-
 /*CRIAÇÃO DA TABELA ADMINSTRADOR*/
-CREATE TABLE administrador (
-    id_admin INT PRIMARY KEY AUTO_INCREMENT,
-    id_usuario INT UNIQUE,
-    nivel_acesso VARCHAR(50),
-    cargo VARCHAR(50),
-    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
+CREATE TABLE adm (
+	id_adm INT PRIMARY KEY AUTO_INCREMENT,
+    nome_adm VARCHAR(255) NOT NULL,
+    sobrenome_adm VARCHAR(255) NOT NULL,
+    cpf_adm VARCHAR(14) UNIQUE NOT NULL,
+    atuacao_adm VARCHAR(50) NOT NULL,
+    cargo_adm VARCHAR(100) NOT NULL,
+    nome_empresa VARCHAR(255) NOT NULL,
+    cnpj VARCHAR(14) UNIQUE NOT NULL,
+    cep_empresa VARCHAR(8) UNIQUE NOT NULL
 );
-/*MOSTRA DADOS DA TABELA ADMINSTRADOR*/
-SELECT * FROM administrador;
-/*MOSTRAR A ESTRUTURA DA TABELA ADMINSTRADOR*/
-DESCRIBE administrador;
+/*MOSTRA DADOS DA TABELA ADMINISTRADOR*/
+SELECT * FROM adm;
+/*MOSTRAR A ESTRUTURA DA TABELA ADMINISTRADOR*/
+DESCRIBE adm;
 
 
 /*CRIAÇÃO DA TABELA EVENTOS*/
 CREATE TABLE eventos (
     id_evento INT PRIMARY KEY AUTO_INCREMENT,
-    id_admin INT UNIQUE,
+    id_adm INT UNIQUE,
     nome_evento VARCHAR(255) NOT NULL,
     preco VARCHAR(100) NOT NULL,
     data_hora DATETIME NOT NULL,
     endereco VARCHAR(255) NOT NULL,
     descricao TEXT,
     organizadores VARCHAR(255),
-    FOREIGN KEY (id_admin) REFERENCES administrador(id_admin) ON DELETE SET NULL
+    FOREIGN KEY (id_adm) REFERENCES adm(id_adm) ON DELETE SET NULL
 );
 /*MOSTRA DADOS DA TABELA EVENTOS*/
 SELECT * FROM eventos;
