@@ -2,11 +2,12 @@ import React from "react";
 import bullseyeSolid from "./bullseye-solid.svg";
 import eyeSolid from "./eye-solid.svg";
 import medalSolid from "./medal-solid.svg";
+
 import { Segmento } from "../Segmento";
 import "./style.css";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/footer/footer";
-import criancasFoto from "./perspectiva-de-adolescentes-diversos-que-praticam-actividades-de-saude-e-bem-estar-para-si-mesmos-e-para-sua-comunidade.jpg";
+import criancasFoto from "../Sobre/perspectiva-de-adolescentes-diversos-que-praticam-actividades-de-saude-e-bem-estar-para-si-mesmos-e-para-sua-comunidade.jpg";
 
 
 export const Sobre = () => {
@@ -14,7 +15,10 @@ export const Sobre = () => {
    
   <>
       <Header/>
-  <img className="rectangle" /> 
+        <div className="sobre-banner">
+            <img src={criancasFoto} alt="Criancas" />
+          
+         </div>
    <section className="sobre-section">
 
  
@@ -48,8 +52,7 @@ export const Sobre = () => {
    
 
   </div>
-  <img src={criancasFoto} alt="Criancas Felizes" className="foto-crianca" />
- 
+  
 </section>
 <Footer/>
 </>

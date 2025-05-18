@@ -9,6 +9,7 @@ import { Login} from "./pages/Login"
 import { Signup } from "./pages/Signup";
 import { Dashboard } from "./pages/Dashboard";
 import { Eventos } from "./pages/Eventos";
+import '/styleguide.css';
 
 
 

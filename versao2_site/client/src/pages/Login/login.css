@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo com imagem e filtro escuro para contraste */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('./retrato-de-uma-jovem-adoravel.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Overlay escura para contraste */
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(27, 27, 27, 0.55);
+  z-index: 0;
+}
+
+/* Logo */
+.login-logo {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Formulário */
+form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+  padding: 36px 32px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+form h2 {
+  font-size: 26px;
+  margin-bottom: 28px;
+  color: #4F4F4F;
+  text-align: center;
+}
+
+input {
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border: 1.8px solid #d3dce6;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.25s ease;
+}
+
+input:focus {
+  border-color: #bc1c36;
+  outline: none;
+}
+
+button {
+  padding: 14px 0;
+  background-color: #FF254A;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 6px;
+}
+
+button:hover {
+  background-color: #bc1c36;
+}
+
+.error-message {
+  margin-top: 14px;
+  color: #e53935;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Links auxiliares */
+.links {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.links a {
+  color: #4F4F4F;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #4F4F4F;
+}

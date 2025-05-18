@@ -8,7 +8,7 @@ import FelipeAlmeida from "./img/felipe_almeida.jpg";
 import JoaquimRoberto from "./img/joaquim_roberto.jpg";
 import CarlosEAlbertini from "./img/carlos_albertini.jpg";
 import MarcosBrito from "./img/marcos_brito.jpg";
-import lucy from "./img/lucy_mari.jpg";
+import lucy from "./img/foto_rosto_mari.png";;
 import rodrigo from "./img/rodrigo_assirati.jpg";
 import voluntario1 from "./img/Rectangle-40voluntario.jpg";
 import voluntario2 from "./img/Rectangle-67voluntario.jpg";

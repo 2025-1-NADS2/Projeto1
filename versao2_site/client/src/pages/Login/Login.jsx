@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logoIC from "./Logo_TextoBranco.svg";
+import "./login.css";
 
 export const Login = () => {
   const [email, setEmail] = useState('');
@@ -16,16 +19,10 @@ export const Login = () => {
         senha,
       });
 
-      // Exibe mensagem de sucesso
       window.alert('Login realizado com sucesso!');
-      
-      // Salva o usuário no localStorage (opcional, caso queira salvar o login)
       localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
-
-      // Redireciona para a página principal
       navigate('/');
     } catch (error) {
-      console.error('Erro no login:', error);
       if (error.response && error.response.data.error) {
         setMessage(error.response.data.error);
       } else {
@@ -36,8 +33,20 @@ export const Login = () => {
 
   return (
     <div className="login-container">
-      <h2>Entrar</h2>
+      {/* Logo simples - substitua pela sua */}
+      <div className="login-logo">
+          <Link to="/homepage">
+            <img
+              className="login-logo"
+              src={logoIC}
+              alt="Logo Instituto Criativo"
+            />
+          </Link>
+      </div>
+
       <form onSubmit={handleLogin}>
+        <h2>Entrar</h2>
+
         <input
           type="email"
           placeholder="Email"
@@ -52,9 +61,16 @@ export const Login = () => {
           onChange={(e) => setSenha(e.target.value)}
           required
         />
+
         <button type="submit">Login</button>
+
+        {message && <p className="error-message">{message}</p>}
+
+        <div className="links">
+          <a href="#esqueci">Esqueci minha senha</a>
+          <a href="#criar">Criar conta</a>
+        </div>
       </form>
-      {message && <p>{message}</p>}
     </div>
   );
 };
