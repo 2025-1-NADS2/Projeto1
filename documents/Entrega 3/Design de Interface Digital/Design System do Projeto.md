@@ -74,6 +74,8 @@ Este Design System tem como objetivo padronizar a identidade visual e a experiê
   line-height: var(--linha-altura-paragrafo);
 }
 
+___
+
 ####  **Visualizar o Design System no Figma com links no README**
 
 ```markdown
