@@ -2,6 +2,7 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/footer/footer";
+import { ActionButton } from "../../components/ActionButton/ActionButton";
 import { useEffect } from "react";
 import exemplo2 from "./IMG/example-2.png";
 import exemplo3 from "./IMG/example-3.png";
@@ -78,7 +79,6 @@ export const Homepage = () => {
               className="button-3"
               href="/signup"
               rel="noopener noreferrer"
-              target="_blank"
             >
               <div className="text-wrapper-10">Quero ser criativo</div>
             </a>
@@ -177,6 +177,7 @@ export const Homepage = () => {
             </div>
             <button className="seta direita">&#8250;</button>
           </div>
+          <ActionButton />
           <Footer />
         </section>
 

@@ -14,6 +14,12 @@ router.post("/usuario", async (req, res) => {
             return res.status(400).json({ error: "O usuário não preencheu todas as informações necessárias. Por favor, revise o formulário" });
         }
 
+        const [userExistente] = await db.execute("SELECT * FROM usuario WHERE email = ?", [email]);
+
+        if (userExistente.length > 0) {
+            return res.status(409).json({ error: "E-mail já cadastrado. Tente outro." });
+        }
+
         const [result] = await db.execute(
             "INSERT INTO usuario(nome_usuario, sobrenome_usuario, telefone, email, cpf, senha) VALUES (?, ?, ?, ?, ?, ?)",
             [nome_usuario, sobrenome_usuario, telefone, email, cpf, senha]
