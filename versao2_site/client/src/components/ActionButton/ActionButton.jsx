@@ -21,9 +21,8 @@ export const ActionButton = () => {
 
                     <a
                         className="action-button-link"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSeG9lzGfHVSifOnKUA7CdMQSI_L8o0m-WXm2jucjtVtJXuqWw/viewform"
+                        href="#/Signup_ADM"
                         rel="noopener noreferrer"
-                        target="_blank"
                     >
                         <div className="action-button-link-text">Quero ser criativo</div>
                     </a>

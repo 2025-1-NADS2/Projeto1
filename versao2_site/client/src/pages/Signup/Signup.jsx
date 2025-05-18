@@ -16,12 +16,12 @@ export const Signup = () => {
     e.preventDefault();
 
     //#region VALIDAÇÃO DE DADOS
-    if (nome_usuario.length < 3 || nome_usuario.length > 255) {
+    if (nome_usuario.length < 3 || nome_usuario.length > 50) {
       setMessage("O nome deve ter entre 3 e 50 caracteres.");
       return;
     }
 
-    if (sobrenome_usuario.length < 3 || sobrenome_usuario.length > 255) {
+    if (sobrenome_usuario.length < 3 || sobrenome_usuario.length > 50) {
       setMessage("O nome deve ter entre 3 e 50 caracteres.");
       return;
     }
@@ -87,14 +87,14 @@ export const Signup = () => {
       <form onSubmit={Cadastro}>
         <input
           type="text"
-          placeholder="Nome"
+          placeholder="Nome do usuário"
           value={nome_usuario}
           onChange={(e) => setNome(e.target.value)}
           required
         />
         <input
           type="text"
-          placeholder="Sobrenome"
+          placeholder="Sobrenome do usuário"
           value={sobrenome_usuario}
           onChange={(e) => setSobrenome(e.target.value)}
           required
@@ -115,7 +115,7 @@ export const Signup = () => {
         />
         <input
           type="text"
-          placeholder="CPF"
+          placeholder="CPF (000.000.000-00)"
           value={cpf}
           onChange={(e) => setCpf(e.target.value)}
           required

@@ -3,6 +3,7 @@ import db from './db.js'
 
 const router = express.Router()
 
+//#region ROTAS USUÁRIO
 
 //#region CREATE USUÁRIO
 router.post("/usuario", async (req, res) => {
@@ -31,6 +32,71 @@ router.post("/usuario", async (req, res) => {
     }
 });
 
+//#endregion
+
+//#region CREATE ADM
+router.post("/admin", async (req, res) => {
+    try {
+        console.log("Body recebido:", req.body);
+
+        // ✅ Desestruturação dos dados
+        const { 
+            nome_adm,
+            sobrenome_adm,
+            email_adm,
+            cpf_adm,
+            atuacao_adm,
+            cargo_adm,
+            nome_empresa,
+            cnpj,
+            cep_empresa,
+            senha 
+        } = req.body;
+
+        // ✅ Verificação se todos os campos foram preenchidos
+        if (
+            !nome_adm || !sobrenome_adm || !email_adm || !cpf_adm ||
+            !atuacao_adm || !cargo_adm || !nome_empresa ||
+            !cnpj || !cep_empresa || !senha
+        ) {
+            return res.status(400).json({ error: "Preencha todas as informações necessárias." });
+        }
+
+        // ✅ Verificação de duplicidade: email, cpf, cnpj, cep
+        const [admExistente] = await db.execute(
+            "SELECT * FROM adm WHERE email_adm = ? OR cpf_adm = ? OR cnpj = ? OR cep_empresa = ?",
+            [email_adm, cpf_adm, cnpj, cep_empresa]
+        );
+
+        if (admExistente.length > 0) {
+            return res.status(409).json({ error: "Dados duplicados. Verifique e-mail, CPF, CNPJ e CEP." });
+        }
+
+        // ✅ Inserção no banco de dados
+        const [result] = await db.execute(
+            "INSERT INTO adm (nome_adm, sobrenome_adm, email_adm, cpf_adm, atuacao_adm, cargo_adm, nome_empresa, cnpj, cep_empresa, senha) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            [nome_adm, sobrenome_adm, email_adm, cpf_adm, atuacao_adm, cargo_adm, nome_empresa, cnpj, cep_empresa, senha]
+        );
+
+        // ✅ Retorno de sucesso
+        res.status(201).json({ 
+            id: result.insertId,
+            nome_adm,
+            sobrenome_adm,
+            email_adm,
+            cpf_adm,
+            atuacao_adm,
+            cargo_adm,
+            nome_empresa,
+            cnpj,
+            cep_empresa,
+            senha
+        });
+    } catch (error) {
+        console.error("Erro no backend:", error.message);
+        res.status(500).json({ error: error.message });
+    }
+});
 //#endregion
 
 //#region READ USUÁRIO
@@ -101,6 +167,8 @@ router.delete("/usuario/:id", async (req, res) => { //trocar app por router
         res.status(500).json({ error: error.message })
     }
 })
+//#endregion
+
 //#endregion
 
 console.log("Rota criada")
