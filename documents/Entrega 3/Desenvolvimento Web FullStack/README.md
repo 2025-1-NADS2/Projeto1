@@ -1,3 +1,5 @@
+Baixe a pasta dashboard e abra com o Visual Studio Code
+
 Para dar start no projeto faça os seguintes passos
 
 abra o terminal usando o comando "    ctrl + shift + '   " 
