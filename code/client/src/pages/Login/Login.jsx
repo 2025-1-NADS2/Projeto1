@@ -12,7 +12,7 @@ export const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    
+
     // Validação básica dos campos
     if (!email || !senha) {
       setMessage('Preencha todos os campos');
@@ -27,10 +27,12 @@ export const Login = () => {
 
       window.alert('Login realizado com sucesso!');
       localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
-      
+      localStorage.setItem('token', response.data.token);
+
+
       // Redireciona para a página inicial
       navigate('/');
-      
+
     } catch (error) {
       if (error.response && error.response.data.error) {
         setMessage(error.response.data.error);
@@ -62,7 +64,7 @@ export const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        
+
         <input
           type="password"
           placeholder="Senha"

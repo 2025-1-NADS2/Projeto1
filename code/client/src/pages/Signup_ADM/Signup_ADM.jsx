@@ -5,7 +5,7 @@ export const Signup_ADM = () => {
   const [formData, setFormData] = useState({
     nome_adm: '',
     sobrenome_adm: '',
-    email_adm: '',
+    email: '',
     cpf_adm: '',
     atuacao_adm: '',
     cargo_adm: '',
@@ -50,7 +50,7 @@ export const Signup_ADM = () => {
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email_adm)) {
+    if (!emailRegex.test(formData.email)) {
       setMessage("Email inválido. Use o formato: teste@exemplo.com");
       return;
     }
@@ -83,7 +83,7 @@ export const Signup_ADM = () => {
       setFormData({
         nome_adm: '',
         sobrenome_adm: '',
-        email_adm: '',
+        email: '',
         cpf_adm: '',
         atuacao_adm: '',
         cargo_adm: '',
@@ -105,7 +105,7 @@ export const Signup_ADM = () => {
       <form onSubmit={handleSubmit}>
         <input type="text" name="nome_adm" placeholder="Nome" value={formData.nome_adm} onChange={handleChange} required />
         <input type="text" name="sobrenome_adm" placeholder="Sobrenome" value={formData.sobrenome_adm} onChange={handleChange} required />
-        <input type="email" name="email_adm" placeholder="E-mail" value={formData.email_adm} onChange={handleChange} required />
+        <input type="email" name="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required />
         <input type="text" name="cpf_adm" placeholder="CPF (000.000.000-00)" value={formData.cpf_adm} onChange={handleChange} required />
         <input type="text" name="atuacao_adm" placeholder="Área de Atuação" value={formData.atuacao_adm} onChange={handleChange} required />
         <input type="text" name="cargo_adm" placeholder="Cargo" value={formData.cargo_adm} onChange={handleChange} required />

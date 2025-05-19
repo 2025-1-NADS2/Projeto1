@@ -1,22 +1,22 @@
-import { Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Homepage } from "./pages/Homepage";
 import { Sobre } from "./pages/Sobre";
 import { Colaboradores } from "./pages/Colaboradores";
 import { ImpactoSocial } from "./pages/ImpactoSocial";
 import { Marcas } from "./pages/Marcas";
 import { Segmento } from "./pages/Segmento";
-import { Login} from "./pages/Login"
+import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup";
 import { Signup_ADM } from "./pages/Signup_ADM";
 import { Dashboard } from "./pages/Dashboard";
 import { Eventos } from "./pages/Eventos";
-import '/styleguide.css';
-
-
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute"; // Import do PrivateRoute
 
 const App = () => {
   return (
     <Routes>
+      {/* Rotas Públicas */}
       <Route path="/" element={<Homepage />} />
       <Route path="/homepage" element={<Homepage />} />
       <Route path="/sobre" element={<Sobre />} />
@@ -27,9 +27,12 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/signup_adm" element={<Signup_ADM />} />
-      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/eventos" element={<Eventos />} />
-      
+
+      {/* Rotas Privadas - Somente Administradores */}
+      <Route element={<PrivateRoute />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Route>
     </Routes>
   );
 };

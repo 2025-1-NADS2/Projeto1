@@ -71,9 +71,12 @@ export const Signup = () => {
         senha,
       });
 
-      setId(response.data.id);
+      setId(response.data.usuario.id);
       setMessage('Cadastro realizado com sucesso!');
       console.log('Cadastro:', response.data);
+
+      // ✅ Salva no LocalStorage
+      localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
 
       // ✅ Exibe um alerta e redireciona para a página inicial
       window.alert("Cadastro realizado com sucesso!");
@@ -113,7 +116,7 @@ export const Signup = () => {
         />
         <input
           type="tel"
-          placeholder="Telefone"
+          placeholder="Telefone (00000-0000)"
           value={telefone}
           onChange={(e) => setTelefone(e.target.value)}
           required
