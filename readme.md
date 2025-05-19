@@ -55,48 +55,33 @@ Para resolver esse problema, desenvolvemos uma aplicação completa com dashboar
 ## 📁 Estrutura do Projeto
 
 ```
-instituto-criativo/
-├── backend/
-│   ├── Controllers/
-│   ├── DTOs/
-│   ├── Models/
-│   ├── Services/
-│   ├── Repositories/
-│   │   └── Implementations/
-│   ├── Data/
-│   ├── Helpers/
-│   ├── Middleware/
-│   ├── Migrations/
-│   ├── appsettings.json
-│   ├── Program.cs
-│   ├── Startup.cs
-│   └── InstitutoCriativoAPI.csproj
-│
-├── frontend/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── assets/images/
-│   │   ├── components/{events, donations, dashboard, common, auth}
-│   │   ├── pages/{Home, Events, Dashboard, Login, Register, Donations, NotFound}.jsx
-│   │   ├── services/api.js
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── .env
-│   ├── tailwind.config.js
-│   ├── vite.config.js
-│   └── package.json
-│
-├── database/
-│   ├── InstitutoCriativo_ER_Diagram.png
-│   └── InstitutoCriativo_DB_Script.sql
-│
-├── docs/
-│   └── Desenvolvimento do Sistema Web para o Instituto Criativo.pdf
-│
-├── .gitignore
-└── README.md
+PROJETO1/
+├── code/
+│   ├── client/
+│   │   └── src/
+│   │       ├── .gitignore
+│   │       ├── index.html
+│   │       ├── package-lock.json
+│   │       ├── package.json
+│   │       ├── README.md
+│   │       ├── styleguide.css
+│   │       └── vite.config.js
+│   ├── server/
+│   │   ├── middleware/
+│   │   ├── public/
+│   │   ├── db.js
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── routes.js
+│   │   └── server.js
+│   ├── documents/
+│   │   ├── Entrega 1/
+│   │   ├── Entrega 2/
+│   │   └── Entrega 3/
+│   ├── .gitignore
+│   ├── banco_instituto.sql
+│   └── readme.md
+
 ```
 
 ## 🗓️ Cronograma de Desenvolvimento
