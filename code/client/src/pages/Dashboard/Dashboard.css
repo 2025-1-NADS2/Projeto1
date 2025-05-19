@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding-bottom: 100px;
+    padding-top:50px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1200px;
+
+}
+
+/* TOPO - Cartões */
+.miniretangulo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.miniretangulo div {
+    flex: 1 1 22%;
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.miniretangulo span {
+    display: block;
+    font-size: 20px;
+}
+
+.Separador{
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+.Separador span{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Quantia {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Descricao {
+    font-size: 14px;
+    color: #666;
+}
+
+/* MEIO - Tabelas */
+.Tabelas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.participantes {
+    flex: 1 1 48%;
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 16px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* BASE - Gráfico */
+.ContainerVertical {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Grafico {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; 
+}
+.Grafico .Espaço{
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 16px;
+}
+.GraficoJunto {    
+    display: flex;
+    padding: 10px;
+    justify-content:center;
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 16px;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .miniretangulo div {
+        flex: 1 1 100%;
+    }
+
+    .Tabelas {
+        flex-direction: column;
+    }
+
+    .participantes {
+        flex: 1 1 100%;
+    }
+}
