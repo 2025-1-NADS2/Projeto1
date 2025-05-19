@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import logoIC from "./Logo_TextoBranco.svg";
 import "./login.css";
 
@@ -13,35 +12,44 @@ export const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    
+    // Validação básica dos campos
+    if (!email || !senha) {
+      setMessage('Preencha todos os campos');
+      return;
+    }
+
     try {
-      const response = await axios.post('http://localhost:3000/api/usuario/login', {
+      const response = await axios.post('http://localhost:3000/api/login', {
         email,
         senha,
       });
 
       window.alert('Login realizado com sucesso!');
       localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
+      
+      // Redireciona para a página inicial
       navigate('/');
+      
     } catch (error) {
       if (error.response && error.response.data.error) {
         setMessage(error.response.data.error);
       } else {
-        setMessage('Erro ao realizar login.');
+        setMessage('Erro ao realizar login. Tente novamente.');
       }
     }
   };
 
   return (
     <div className="login-container">
-      {/* Logo simples - substitua pela sua */}
       <div className="login-logo">
-          <Link to="/homepage">
-            <img
-              className="login-logo"
-              src={logoIC}
-              alt="Logo Instituto Criativo"
-            />
-          </Link>
+        <Link to="/">
+          <img
+            className="login-logo"
+            src={logoIC}
+            alt="Logo Instituto Criativo"
+          />
+        </Link>
       </div>
 
       <form onSubmit={handleLogin}>
@@ -54,6 +62,7 @@ export const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        
         <input
           type="password"
           placeholder="Senha"
@@ -67,8 +76,8 @@ export const Login = () => {
         {message && <p className="error-message">{message}</p>}
 
         <div className="links">
-          <a href="#esqueci">Esqueci minha senha</a>
-          <a href="#criar">Criar conta</a>
+          <Link to="/recuperar-senha">Esqueci minha senha</Link>
+          <Link to="/signup">Criar conta</Link>
         </div>
       </form>
     </div>

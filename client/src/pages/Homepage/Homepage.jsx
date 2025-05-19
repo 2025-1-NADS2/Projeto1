@@ -177,7 +177,6 @@ export const Homepage = () => {
             </div>
             <button className="seta direita">&#8250;</button>
           </div>
-          <ActionButton />
           <Footer />
         </section>
 
